@@ -1,0 +1,7078 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "Phần của đường bộ được sử dụng cho phương tiện giao thông đường bộ đi lại là gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Phần mặt đường và lề đường.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Phần đường xe chạy.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Phần đường xe cơ giới.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "2",
+      "question": "\"Người tham gia giao thông đường bộ\" gồm những đối tượng nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Người điều khiển, người được chở trên phương tiện tham gia giao thông đường bộ.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Người điều khiển, dẫn dắt vật nuôi trên đường bộ; người đi bộ trên đường bộ.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Cả hai ý trên.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "3",
+      "question": "Hành vi nào sau đây bị nghiêm cấm?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Điều khiển xe cơ giới lạng lách, đánh võng, rú ga liên tục khi tham gia giao thông trên đường.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xúc phạm, đe dọa, cản trở, chống đối hoặc không chấp hành hiệu lệnh, hướng dẫn, yêu cầu kiểm tra, kiểm soát của người thi hành công vụ về bảo đảm trật tự, an toàn giao thông đường bộ.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Cả hai ý trên.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "4",
+      "question": "Khi hiệu lệnh của người điều khiển giao thông trái với tín hiệu đèn giao thông hoặc biển báo hiệu đường bộ thì người tham gia giao thông đường bộ phải chấp hành báo hiệu đường bộ nào dưới đây?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Theo hiệu lệnh của người điều khiển giao thông.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Theo tín hiệu đèn giao thông.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Theo biển báo hiệu đường bộ.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "5",
+      "question": "Khi lái xe trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh trừ các khu vực có biển cấm sử dụng còi, người lái xe được sử dụng còi trong thời gian nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Từ 05 giờ đến 22 giờ.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Từ 23 giờ ngày hôm trước đến 05 giờ sáng hôm sau.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "6",
+      "question": "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào sau đây không được phép?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Sử dụng xe để chở người hoặc hàng hóa; để chân chạm xuống đất khi khởi hành.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đội mũ bảo hiểm; chạy xe đúng tốc độ quy định và chấp hành đúng quy tắc giao thông đường bộ.",
+          "correct": false
+        },
+        {
+          "id": 4,
+          "content": "Chở người ngồi sau dưới 16 tuổi.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "7",
+      "question": "Trường hợp người được chở trên xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các loại xe tương tự xe gắn máy không đội 'mũ bảo hiểm cho người đi mô tô, xe máy' hoặc không cài quai đúng quy cách (trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật) thì việc xử phạt vi phạm hành chính được quy định như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không bị xử phạt chỉ bị nhắc nhở.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Người được chở không bị xử phạt, chỉ xử phạt người điều khiển xe mô tô, xe gắn máy.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Xử phạt cả người điều khiển và người được chở trên xe mô tô, xe gắn máy.",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "content": "Người được chở bị xử phạt, không xử phạt người điều khiển xe mô tô, xe gắn máy.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "8",
+      "question": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, người điều khiển phương tiện phải nhường đường như thế nào là đúng quy tắc giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe báo hiệu xin đường trước, xe đó được đi trước.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Phải nhường đường cho xe đi đến từ bên phải.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Phải nhường đường cho xe đi đến từ bên trái.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "9",
+      "question": "Người lái xe được phép vượt xe khác về bên phải trong trường hợp nào dưới đây?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe phía trước đang đi sát lề đường bên trái.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Cả hai ý trên.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "10",
+      "question": "Người có giấy phép lái xe chưa bị trừ hết 12 điểm, được phục hồi điểm giấy phép lái xe trong trường hợp nào sau đây?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phục hồi.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Được phục hồi đủ 12 điểm, nếu không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "11",
+      "question": "KNhững hành vi nào sau đây thể hiện là người có văn hóa giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Luôn tuân thủ pháp luật về trật tự, an toàn giao thông đường bộ, nhường nhịn và giúp đỡ người khác.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Đi nhanh, vượt đèn đỏ nếu không có lực lượng Công an.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Bấm còi và nháy đèn liên tục để cảnh báo xe khác.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "12",
+      "question": "Khi điều khiển xe mô tô tay ga xuống đường dốc dài, độ dốc cao, người lái xe cần thực hiện các thao tác nào dưới đây để bảo đảm an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Nhả hết tay ga, tắt động cơ, sử dụng phanh trước và phanh sau để giảm tốc độ.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Sử dụng phanh trước để giảm tốc độ kết hợp với tắt chìa khóa điện của xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "13",
+      "question": "Khi điều khiển xe mô tô quay đầu, người lái xe cần thực hiện như thế nào để bảo đảm an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bật tín hiệu báo rẽ trước khi quay đầu, từ từ giảm tốc độ đến mức có thể dừng lại.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Chỉ quay đầu xe tại những nơi được phép quay đầu.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Quan sát an toàn các phương tiện tới từ phía trước, phía sau, hai bên đồng thời nhường đường cho xe từ bên phải và phía trước đi tới.",
+          "correct": false
+        },
+        {
+          "id": 4,
+          "content": "Cả ba ý trên.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "14",
+      "question": "Biển nào cấm quay đầu xe?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Không biển nào.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/317.jpg"
+    },
+    {
+      "id": "15",
+      "question": "Khi gặp biển nào xe ưu tiên theo luật định vẫn phải dừng lại?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Cả ba biển.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/333.jpg"
+    },
+    {
+      "id": "16",
+      "question": "Biển này có ý nghĩa như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Cấm dừng xe về hướng bên trái.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Cấm dừng và đỗ xe theo hướng bên phải.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép đỗ xe và dừng xe theo hướng bên phải.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/358.jpg"
+    },
+    {
+      "id": "17",
+      "question": "Biển nào báo hiệu \"Giao nhau có tín hiệu đèn\"?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/374.jpg"
+    },
+    {
+      "id": "18",
+      "question": "Biển nào báo hiệu \"Đường giao nhau\" của các tuyến đường cùng cấp?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/390.jpg"
+    },
+    {
+      "id": "19",
+      "question": "Biển nào báo hiệu \"Đường giao nhau\" của các tuyến đường cùng cấp?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/406.jpg"
+    },
+    {
+      "id": "20",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Không biển nào.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/436.jpg"
+    },
+    {
+      "id": "21",
+      "question": "Khi gặp biển báo này, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển chỉ dẫn hết hiệu lực khu vực đỗ xe trên các tuyến đường đối ngoại.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển chỉ dẫn khu vực đỗ xe trên các tuyến đường đối ngoại.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển chỉ dẫn hết cấm đỗ xe theo giờ trong khu vực.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "22",
+      "question": "Tại đoạn đường có biển \"Làn đường dành riêng cho từng loại xe\" dưới đây, các phương tiện có được phép chuyển sang làn khác để đi theo hành trình mong muốn khi đến gần nơi đường bộ giao nhau hay không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép chuyển sang làn khác, chỉ được đi trong làn quy định theo biển.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Được phép chuyển sang làn khác.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/465.jpg"
+    },
+    {
+      "id": "23",
+      "question": "Theo tín hiệu đèn, xe nào được phép đi?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con và xe khách.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": true,
+      "img_url": "https://thibanglaixeonline.com/image250/499.jpg"
+    },
+    {
+      "id": "24",
+      "question": "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": true,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "25",
+      "question": "Bạn có được phép vượt xe mô tô phía trước không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được vượt.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Cho phép.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/556.jpg"
+    },
+    {
+      "id": "26",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Cấm ô tô con.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Cấm xe tải.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Cấm mọi loại xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "27",
+      "question": "Khi gặp biển báo này, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, chú ý đường gồ ghề.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tăng tốc độ để vượt qua đoạn đường khó.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đi bình thường.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "28",
+      "question": "Xe nào đỗ vi phạm quy tắc giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Cả hai xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "29",
+      "question": "Việc sử dụng còi trong khu dân cư vào ban đêm (từ 22 giờ đến 5 giờ sáng) có bị nghiêm cấm hay không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bị nghiêm cấm.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không bị nghiêm cấm.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được sử dụng khi cần vượt xe khác.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "30",
+      "question": "Khi điều khiển xe mô tô trên đường vòng, đường đèo dốc, người lái xe phải thực hiện như thế nào để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi chậm, đi sát lề đường bên phải, không được vượt.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tăng tốc để nhanh chóng qua khúc cua.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đi vào giữa đường để dễ quan sát.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "31",
+      "question": "Biển báo nào báo hiệu hết đường ưu tiên?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "32",
+      "question": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con, xe tải.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe tải, xe con.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Xe con đi trước, sau đó là xe tải.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "33",
+      "question": "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được kéo theo xe khác không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu xe được kéo có khối lượng nhỏ.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép trong trường hợp khẩn cấp.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "34",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đường dành cho người đi bộ.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Cấm người đi bộ.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Nơi có nhiều người đi bộ.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "35",
+      "question": "Khi điều khiển xe trên đường trơn trượt, người lái xe phải thực hiện thao tác nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, đi số thấp, không phanh gấp, không đánh lái đột ngột.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tăng tốc để nhanh chóng thoát khỏi đoạn đường trơn trượt.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Giữ nguyên tốc độ, phanh nhẹ để thử độ bám đường.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "36",
+      "question": "Xe nào phải nhường đường trong trường hợp này?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Không xe nào phải nhường.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "37",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nguy hiểm đường trượt.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Nguy hiểm đường dốc.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Nguy hiểm đường cua.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "38",
+      "question": "Khi điều khiển xe mô tô trên đường hẹp có nhiều chướng ngại vật, người lái xe phải làm gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi chậm, quan sát kỹ, nhường đường cho xe ngược chiều nếu cần.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Bấm còi liên tục để các xe khác tránh đường.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Tăng tốc để nhanh chóng thoát khỏi đoạn đường hẹp.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "39",
+      "question": "Khi điều khiển xe mô tô trên đường xuống dốc, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm số, giữ tay ga ổn định để hãm tốc độ.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tăng số để xe đi nhanh hơn.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Tắt máy để xe tự trôi.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "40",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Cấm dừng và đỗ xe.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Cấm đỗ xe.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Cấm dừng xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "41",
+      "question": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông khi có tín hiệu đèn giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con, xe tải, xe khách, xe mô tô.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe con, xe tải đi trước, sau đó xe khách và xe mô tô đi.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tất cả các xe dừng lại.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "42",
+      "question": "Khi tham gia giao thông, người lái xe có được sử dụng điện thoại di động cầm tay không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu sử dụng tai nghe bluetooth.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu có việc khẩn cấp.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "43",
+      "question": "Người điều khiển xe mô tô khi dừng xe, đỗ xe trên đường phố phải thực hiện như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Dừng, đỗ xe sát lề đường, hè phố bên phải theo chiều đi của mình.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Có thể dừng, đỗ ở bất kỳ vị trí nào thấy thuận tiện.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Dừng, đỗ xe ở giữa lòng đường để tránh cản trở giao thông trên vỉa hè.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "44",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giao nhau với đường sắt có rào chắn.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giao nhau với đường sắt không có rào chắn.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Giao nhau với đường tàu điện.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "45",
+      "question": "Biển báo này cho biết điều gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nơi giao nhau có tín hiệu đèn.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Nơi giao nhau không có tín hiệu đèn.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Nơi giao nhau có vòng xuyến.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "46",
+      "question": "Xe nào được phép đi trước trong hình dưới đây?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Cả hai xe cùng đi.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "47",
+      "question": "Người lái xe phải làm gì khi điều khiển xe vào ban đêm trên đường không có đèn chiếu sáng?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, bật đèn chiếu xa, khi gặp xe đi ngược chiều thì chuyển sang đèn chiếu gần.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Giữ nguyên tốc độ, bật đèn chiếu xa liên tục.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Tăng tốc để nhanh chóng qua đoạn đường tối.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "48",
+      "question": "Khi điều khiển xe mô tô, người lái xe phải đội mũ bảo hiểm đạt chuẩn, cài quai đúng quy cách trong trường hợp nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Chỉ khi đi trên đường quốc lộ.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Chỉ khi đi trên đường có biển báo bắt buộc đội mũ bảo hiểm.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Khi tham gia giao thông đường bộ.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "49",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Chỉ dẫn đường cụt.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Chỉ dẫn đường hai chiều.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Chỉ dẫn đường cấm đi ngược chiều.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "50",
+      "question": "Trong hình dưới đây, xe nào đỗ đúng quy tắc giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Cả hai xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "51",
+      "question": "Người đủ bao nhiêu tuổi trở lên thì được lái xe mô tô hai bánh có dung tích xi lanh từ 50 cm3 đến dưới 175 cm3?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đủ 16 tuổi.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Đủ 18 tuổi.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đủ 20 tuổi.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "52",
+      "question": "Người lái xe mô tô hai bánh, ba bánh có được kéo, đẩy xe khác, vật khác khi tham gia giao thông không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu xe kéo nhẹ hơn.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu đảm bảo an toàn.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "53",
+      "question": "Trên đường bộ, ngoài khu vực đông dân cư, xe mô tô, xe ô tô chở người đến 30 chỗ, xe ô tô tải có trọng tải dưới 3,5 tấn tham gia giao thông với tốc độ tối đa cho phép là bao nhiêu?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "60 km/h.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "70 km/h.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "80 km/h.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "54",
+      "question": "Biển báo nào báo hiệu đường đôi?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "55",
+      "question": "Khi muốn dừng xe, người lái xe phải thực hiện thao tác nào để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Quan sát gương, giảm tốc độ, ra tín hiệu rẽ phải để dừng xe.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Dừng xe ngay lập tức khi thấy vật cản.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Bật đèn khẩn cấp và dừng xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "56",
+      "question": "Trong hình dưới đây, xe nào đỗ đúng quy tắc giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe tải.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Xe mô tô.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "57",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Cấm ô tô tải.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Cấm ô tô con.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Cấm mọi loại xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "58",
+      "question": "Khi tham gia giao thông, người lái xe mô tô hai bánh, xe gắn máy có được đi vào phần đường dành cho ô tô không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu đường vắng.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu đi sát lề đường.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "59",
+      "question": "Người điều khiển xe mô tô hai bánh có được chở người từ đủ 16 tuổi đến dưới 18 tuổi ngồi sau xe không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được chở tối đa 2 người nếu đảm bảo an toàn.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không được chở.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Chỉ được chở 1 người nếu người đó đội mũ bảo hiểm.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "60",
+      "question": "Biển báo nào báo hiệu nguy hiểm đường hẹp hai bên?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "61",
+      "question": "Xe nào vi phạm quy tắc giao thông khi rẽ trái?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe tải.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Xe khách.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "62",
+      "question": "Người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy khi tham gia giao thông có được đội mũ bảo hiểm kiểu thời trang không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu có dán tem kiểm định.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép, phải đội mũ bảo hiểm đạt chuẩn.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu đó là mũ bảo hiểm của hãng xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "63",
+      "question": "Trong trường hợp khẩn cấp, để tránh chướng ngại vật, người lái xe phải thực hiện như thế nào để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc để vượt qua chướng ngại vật.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ và chuyển hướng sang bên an toàn nhất.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Dừng xe ngay lập tức.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "64",
+      "question": "Biển báo nào báo hiệu nơi đường bộ giao nhau cùng mức với đường sắt?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "65",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nơi giao nhau có vòng xuyến.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Nơi đường giao nhau.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đường một chiều.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "66",
+      "question": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông trong trường hợp này?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con, xe khách, xe tải.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe khách, xe con, xe tải.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Xe tải, xe con, xe khách.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "67",
+      "question": "Người điều khiển phương tiện giao thông phải giảm tốc độ đến mức không gây nguy hiểm trong trường hợp nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Khi điều khiển xe trong khu dân cư.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Khi gặp biển báo nguy hiểm.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Khi trời mưa, đường trơn trượt.",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "content": "Khi đường thông thoáng.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "68",
+      "question": "Hành vi nào dưới đây bị nghiêm cấm khi điều khiển xe mô tô, xe gắn máy?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Buông cả hai tay.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Sử dụng chân chống quệt xuống đường khi xe đang chạy.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đội mũ bảo hiểm đạt chuẩn.",
+          "correct": false
+        },
+        {
+          "id": 4,
+          "content": "Đi đúng tốc độ cho phép.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "69",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đường bị thu hẹp bên phải.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Đường bị thu hẹp bên trái.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đường hẹp cả hai bên.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "70",
+      "question": "Biển báo nào báo hiệu nguy hiểm đường vòng bên phải?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "71",
+      "question": "Trong hình dưới đây, xe nào được phép đi trước?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Xe tải.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "72",
+      "question": "Người điều khiển phương tiện tham gia giao thông trong hầm đường bộ phải tuân thủ quy định nào dưới đây?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được lùi xe, quay đầu xe.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được lùi xe nếu không cản trở giao thông.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được quay đầu xe nếu có chỗ trống.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "73",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy trên đường có nhiều người đi bộ, người lái xe phải làm gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc để nhanh chóng qua khu vực có người đi bộ.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, chú ý quan sát và nhường đường cho người đi bộ.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bấm còi liên tục để cảnh báo người đi bộ.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "74",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Cấm rẽ phải.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Cấm rẽ trái.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép rẽ phải.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "75",
+      "question": "Trong hình dưới đây, xe nào được phép đi thẳng?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe tải.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Xe khách.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "76",
+      "question": "Người lái xe mô tô hai bánh được phép vượt xe khác trong trường hợp nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nơi có vạch kẻ đường liên tục.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Trên cầu có một làn xe.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Nơi được phép vượt và đảm bảo an toàn.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "77",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy chuyển hướng, người lái xe phải giảm tốc độ và nhường đường cho các xe nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe đi ngược chiều.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe đi thẳng.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Cả hai ý trên.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "78",
+      "question": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, người điều khiển phương tiện phải nhường đường như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nhường đường cho xe đi từ bên trái đến.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Nhường đường cho xe đi từ bên phải đến.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Nhường đường cho xe đi trên đường chính.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "79",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đường cong nguy hiểm bên trái.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Đường cong nguy hiểm bên phải.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đường đôi.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "80",
+      "question": "Người điều khiển xe mô tô, xe gắn máy có được sử dụng ô (dù) khi đang điều khiển xe không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu trời mưa to.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu đi chậm.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "81",
+      "question": "Trong hình dưới đây, xe nào được phép đi?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe khách.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Tất cả các xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "82",
+      "question": "Biển báo nào báo hiệu hết hạn chế tốc độ tối thiểu?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "83",
+      "question": "Khi điều khiển xe trên đường có nhiều ổ gà, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc để vượt qua nhanh chóng.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, tránh ổ gà, nếu không tránh được thì đi chậm qua.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đi sát lề đường để tránh ổ gà.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "84",
+      "question": "Người lái xe mô tô, xe gắn máy có được phép chở người bệnh đi cấp cứu vượt quá số người quy định không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Được phép trong trường hợp khẩn cấp và đảm bảo an toàn.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Chỉ được phép chở thêm 1 người.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "85",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đường giao nhau của các tuyến đường cùng cấp.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Đường ưu tiên giao nhau.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đường một chiều.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "86",
+      "question": "Trong hình dưới đây, xe nào được quyền đi trước?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Cả hai xe đều dừng lại.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "87",
+      "question": "Việc bấm còi liên tục trong khu dân cư có bị nghiêm cấm hay không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bị nghiêm cấm.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không bị nghiêm cấm.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu có xe ưu tiên đi qua.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "88",
+      "question": "Khi lùi xe trên đường, người lái xe phải làm gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Quan sát phía sau và bên cạnh, lùi chậm.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Nhìn thẳng phía trước và lùi nhanh.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Bấm còi liên tục khi lùi.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "89",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Cấm ô tô và mô tô.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Cấm xe kéo rơ moóc.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Cấm xe tải.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "90",
+      "question": "Biển báo nào báo hiệu sắp đến bến phà?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "91",
+      "question": "Trong hình dưới đây, xe nào được đi trước?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Xe tải.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "92",
+      "question": "Người điều khiển xe mô tô, xe gắn máy khi chuyển làn đường phải thực hiện như thế nào để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bật đèn tín hiệu báo rẽ trước khi chuyển làn.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Chuyển làn ngay sau khi bật đèn tín hiệu.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Chỉ chuyển làn khi không có xe phía sau.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "93",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy trên đường cao tốc, người lái xe phải tuân thủ quy định nào dưới đây?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép đi vào làn đường khẩn cấp.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được đi vào đường cao tốc.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép đi với tốc độ tối đa cho phép của đường cao tốc.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "94",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giao nhau với đường ưu tiên.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Giao nhau với đường không ưu tiên.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Giao nhau có tín hiệu đèn.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "95",
+      "question": "Biển báo này cấm xe nào đi vào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Cấm xe ô tô.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Cấm xe mô tô.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Cấm xe máy kéo.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "96",
+      "question": "Trong hình dưới đây, xe nào đỗ đúng quy định?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Cả hai xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "97",
+      "question": "Người lái xe mô tô, xe gắn máy có được sử dụng đèn chiếu xa trong khu dân cư vào ban đêm không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu không có xe ngược chiều.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu tốc độ thấp.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "98",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy qua đường sắt không có rào chắn, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, quan sát, nếu an toàn thì cho xe đi qua.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tăng tốc để nhanh chóng qua đường sắt.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Dừng lại chờ tàu qua rồi mới đi.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "99",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đường cụt.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Đường không đi qua được.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đường cấm.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "100",
+      "question": "Theo tín hiệu đèn, xe nào được phép đi?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con và xe tải.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô và xe khách.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tất cả các xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "101",
+      "question": "Người điều khiển xe mô tô, xe gắn máy có được phép rẽ phải khi đèn đỏ nếu có biển báo cho phép không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu có biển báo hoặc tín hiệu phụ cho phép.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Chỉ được phép rẽ phải khi không có xe đi thẳng.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "102",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy vào đường một chiều, người lái xe phải tuân thủ quy tắc nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Chỉ được đi một chiều theo hướng quy định.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép đi ngược chiều nếu không có xe.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép quay đầu xe.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "103",
+      "question": "Người điều khiển xe mô tô, xe gắn máy có được phép chở người đang sử dụng điện thoại di động không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu người ngồi sau sử dụng tai nghe.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu người ngồi sau sử dụng điện thoại rảnh tay.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "104",
+      "question": "Biển báo nào báo hiệu khu vực đông dân cư?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "105",
+      "question": "Khi đi qua đường sắt, người lái xe phải làm gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc để nhanh chóng vượt qua.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, quan sát tàu hỏa, chỉ đi qua khi an toàn.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bấm còi liên tục để cảnh báo tàu hỏa.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "106",
+      "question": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con, xe khách, xe mô tô.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe khách, xe con, xe mô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Xe mô tô, xe khách, xe con.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "107",
+      "question": "Biển báo nào báo hiệu đường đi bộ cắt ngang?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "108",
+      "question": "Trong khu dân cư, tốc độ tối đa cho phép của xe mô tô hai bánh, xe gắn máy là bao nhiêu?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "40 km/h.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "50 km/h.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "60 km/h.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "109",
+      "question": "Người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy có được sử dụng tai nghe khi đang điều khiển xe không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu sử dụng một bên tai nghe.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu nghe nhạc nhẹ.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "110",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Hết cấm vượt.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Hết mọi lệnh cấm.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Hết tốc độ tối đa.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "111",
+      "question": "Xe nào được phép đi trước trong trường hợp này?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Xe tải.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "112",
+      "question": "Người điều khiển xe mô tô, xe gắn máy có được phép đi vào đường cấm hay không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép, trừ trường hợp có giấy phép của cơ quan có thẩm quyền.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu đường vắng.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu đi vào ban đêm.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "113",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy qua nơi đường bộ giao nhau với đường sắt, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc để nhanh chóng vượt qua.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, quan sát, nếu có chuông báo hoặc rào chắn thì phải dừng lại.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bấm còi liên tục và đi qua.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "114",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đường cao tốc.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Đường ưu tiên.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đường dành cho xe cơ giới.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "115",
+      "question": "Biển báo nào báo hiệu nguy hiểm đường giao nhau với đường sắt có rào chắn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "116",
+      "question": "Xe nào được phép rẽ trái trong trường hợp này?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe tải.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Xe khách.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "117",
+      "question": "Người điều khiển xe mô tô, xe gắn máy có được phép chở quá số người quy định không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép, trừ trường hợp được pháp luật cho phép.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu chở trẻ em dưới 6 tuổi.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu chở người bệnh đi cấp cứu.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "118",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy vào ban đêm, người lái xe phải làm gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, bật đèn chiếu gần, nếu cần mới bật đèn chiếu xa.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Bật đèn chiếu xa liên tục để nhìn rõ đường.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Tăng tốc để nhanh chóng qua đoạn đường tối.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "119",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đường đi bộ.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Nơi có trẻ em.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Khu vui chơi trẻ em.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "120",
+      "question": "Biển báo nào báo hiệu nguy hiểm đường xuống dốc nguy hiểm?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "121",
+      "question": "Trong hình dưới đây, xe nào vi phạm quy tắc giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Xe tải.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "122",
+      "question": "Người lái xe mô tô, xe gắn máy có được phép đi vào đường có biển báo cấm xe mô tô, xe gắn máy không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu đi vào ban đêm.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu đường vắng.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "123",
+      "question": "Khi dừng xe, đỗ xe trên đường có dốc, người lái xe phải làm gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Kéo phanh tay, cài số, chèn bánh xe nếu cần.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tắt máy và để xe tự trôi.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Chỉ kéo phanh tay.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "124",
+      "question": "Biển báo nào báo hiệu hết đường dành cho xe ô tô?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "125",
+      "question": "Trong hình dưới đây, xe nào được quyền đi trước?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Xe tải.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "126",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy đi trên đường vòng, người lái xe phải giảm tốc độ và đi như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi vào phần đường bên phải theo chiều đi của mình.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Đi vào giữa đường để dễ quan sát.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đi vào phần đường bên trái để tránh chướng ngại vật.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "127",
+      "question": "Người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy có được mang vác vật cồng kềnh gây cản trở giao thông không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu vật đó nhẹ.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu đi chậm.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "128",
+      "question": "Khi điều khiển xe trên đường có biển báo 'chướng ngại vật phía trước', người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, quan sát, chuẩn bị xử lý tình huống.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tăng tốc để nhanh chóng vượt qua.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Dừng xe ngay lập tức.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "129",
+      "question": "Biển báo nào báo hiệu có dốc lên nguy hiểm?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "130",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy trên đường đèo dốc, người lái xe phải thực hiện như thế nào để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi số thấp, giữ đều ga, không tắt máy khi xuống dốc.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tắt máy để tiết kiệm nhiên liệu.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Về số mo khi xuống dốc.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "131",
+      "question": "Trong hình dưới đây, xe con màu xanh được phép đi theo hướng nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi thẳng.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Rẽ phải.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đi thẳng và rẽ phải.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "132",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giao nhau có tín hiệu đèn.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giao nhau với đường ưu tiên.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Nơi giao nhau có đèn tín hiệu giao thông.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "133",
+      "question": "Người điều khiển xe mô tô, xe gắn máy có được phép sử dụng ô (dù), điện thoại di động khi đang điều khiển xe không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu đảm bảo an toàn.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu sử dụng thiết bị rảnh tay.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "134",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy vượt xe khác, người lái xe phải thực hiện như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bật đèn tín hiệu báo xin vượt, quan sát an toàn và vượt bên trái.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Vượt bên phải nếu xe phía trước đi chậm.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Vượt không cần tín hiệu báo trước nếu đường vắng.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "135",
+      "question": "Biển báo nào báo hiệu hết đoạn đường đôi?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "136",
+      "question": "Trong hình dưới đây, xe nào vi phạm quy tắc giao thông khi dừng, đỗ?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe mô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Xe khách.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "137",
+      "question": "Người điều khiển xe mô tô, xe gắn máy có được phép đi xe dàn hàng ngang từ 3 xe trở lên không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu đi trong đoàn diễu hành.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu đi chậm.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "138",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy trên đường có làn đường dành riêng cho xe ô tô, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi vào làn đường dành cho ô tô để tránh tắc đường.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Đi đúng làn đường của mình, không lấn sang làn của ô tô.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Chỉ đi vào làn ô tô khi muốn vượt.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "139",
+      "question": "Biển báo này có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Hết cấm rẽ trái.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Hết cấm rẽ phải.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Hết cấm quay đầu.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "140",
+      "question": "Biển báo nào báo hiệu đường có ổ gà, lồi lõm?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://truongdaylaixeoto.net/wp-content/uploads/2020/07/Bien-bao-duong-go-ghề.jpg"
+    },
+    {
+      "id": "141",
+      "question": "Trong hình dưới đây, xe con màu xanh đi như thế nào là đúng quy tắc giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Dừng lại trước vạch dừng.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Đi tiếp.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đi chậm và quan sát.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://truongdaylaixeoto.net/wp-content/uploads/2020/07/Sa-hinh-den-do.jpg"
+    },
+    {
+      "id": "142",
+      "question": "Người lái xe mô tô, xe gắn máy có được phép đua xe trái phép không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu có sự cho phép của chính quyền địa phương.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu không gây nguy hiểm cho người khác.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "143",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy vào đường cong, người lái xe phải làm gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, đi đúng phần đường, giữ vững tay lái.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tăng tốc để nhanh chóng vượt qua khúc cua.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đi sát vào lề đường bên trái để mở rộng tầm nhìn.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "144",
+      "question": "Biển báo nào báo hiệu cầu vượt liên thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "145",
+      "question": "Biển báo nào báo hiệu đường cấm xe tải?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "146",
+      "question": "Trong hình dưới đây, xe nào được phép đi thẳng?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Xe con.",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Xe tải.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Xe khách.",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "147",
+      "question": "Người điều khiển xe mô tô, xe gắn máy có được phép lạng lách, đánh võng trên đường không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được phép.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu không gây nguy hiểm.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu đường vắng.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "148",
+      "question": "Khi điều khiển xe mô tô, xe gắn máy qua cầu hẹp, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi chậm, nhường đường cho xe ngược chiều nếu cần.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tăng tốc để nhanh chóng qua cầu.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đi vào giữa cầu để tránh va chạm.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "149",
+      "question": "Biển báo nào báo hiệu cấm xe ô tô khách?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "150",
+      "question": "Trong hình dưới đây, xe con màu xanh đi như thế nào là đúng quy tắc giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi thẳng.",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Rẽ trái.",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Quay đầu.",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "151",
+      "question": "Người điều khiển phương tiện tham gia giao thông đường bộ phải giảm tốc độ đến mức không gây nguy hiểm trong trường hợp nào dưới đây?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Khi vượt xe khác",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Khi cho xe đi qua chỗ đường bộ giao nhau cùng mức với đường sắt",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Khi cho xe đi qua cầu vượt",
+          "correct": false
+        },
+        {
+          "id": 4,
+          "content": "Khi cho xe đi qua hầm chui",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "152",
+      "question": "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bị nghiêm cấm",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không bị nghiêm cấm",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Bị nghiêm cấm tùy từng trường hợp",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "153",
+      "question": "Biển báo hiệu 'Giao nhau với đường sắt có rào chắn' có ý nghĩa gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Báo hiệu sắp đến chỗ giao nhau với đường sắt không có rào chắn",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Báo hiệu sắp đến chỗ giao nhau với đường sắt có rào chắn",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Báo hiệu sắp đến chỗ giao nhau với đường bộ",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "154",
+      "question": "Người lái xe phải xử lý như thế nào khi quan sát phía trước thấy có chướng ngại vật?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, đi chậm",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Phanh gấp, chuyển hướng sang làn đường khác",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Giảm tốc độ hoặc dừng lại khi cần thiết trước chướng ngại vật",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "155",
+      "question": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, người điều khiển phương tiện phải nhường đường như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nhường đường cho xe đi từ bên trái đến",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Nhường đường cho xe đi từ bên phải đến",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Nhường đường cho xe đi từ bất kỳ hướng nào tới",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "156",
+      "question": "Biển báo nào báo hiệu 'Đường đôi'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "157",
+      "question": "Người lái xe mô tô hai bánh, xe gắn máy có được đi vào đường cao tốc không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được đi vào",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được đi vào",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được đi vào khi có sự cho phép của cơ quan quản lý đường cao tốc",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "158",
+      "question": "Trong các trường hợp dưới đây, người điều khiển phương tiện tham gia giao thông không được vượt xe khác khi nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Trên cầu hẹp có một làn xe",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Ở nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Khi xe phía trước đang rẽ trái",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "159",
+      "question": "Khi muốn chuyển hướng, người lái xe phải giảm tốc độ và có tín hiệu báo hướng rẽ. Trong các trường hợp sau đây, trường hợp nào không được phép chuyển hướng?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Tại vị trí có biển báo cấm rẽ",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tại nơi có vạch kẻ đường cho phép chuyển hướng",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "160",
+      "question": "Biển báo nào báo hiệu 'Hết đoạn đường cấm đỗ'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "161",
+      "question": "Người điều khiển xe mô tô hai bánh, xe gắn máy có được kéo, đẩy các xe khác, vật khác khi tham gia giao thông không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu kéo vật nhẹ",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "162",
+      "question": "Khi đang đi trên đường mà xe bị hỏng, người lái xe phải xử lý như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Dừng xe ngay lập tức giữa đường để kiểm tra",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Đưa xe vào lề đường hoặc lề đường an toàn, đặt biển cảnh báo và báo hiệu nguy hiểm",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tiếp tục di chuyển đến gara gần nhất",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "163",
+      "question": "Biển báo nào báo hiệu 'Đường cụt'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "164",
+      "question": "Trong trường hợp nào dưới đây, người điều khiển phương tiện tham gia giao thông không được quay đầu xe?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Ở phần đường dành cho người đi bộ qua đường",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Trên cầu, đầu cầu, gầm cầu vượt",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Ở nơi có biển báo cho phép quay đầu",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "165",
+      "question": "Khi điều khiển xe trên đường vòng, người lái xe cần thực hiện các thao tác nào để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc độ để nhanh chóng thoát khỏi đường vòng",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, đi đúng làn đường, không lấn sang làn đường ngược chiều",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bật đèn pha để chiếu sáng xa hơn",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "166",
+      "question": "Biển báo nào báo hiệu 'Nơi đỗ xe'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "167",
+      "question": "Người ngồi trên xe mô tô hai bánh, xe gắn máy khi tham gia giao thông có được mang, vác vật cồng kềnh không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu không gây cản trở giao thông",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu có giấy phép đặc biệt",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "168",
+      "question": "Khi xe ô tô bị hỏng tại nơi đường sắt giao với đường bộ mà không thể di chuyển được, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Cố gắng đẩy xe ra khỏi đường ray",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Nhanh chóng đặt biển cảnh báo và tìm cách báo cho đơn vị quản lý đường sắt",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Chờ đợi sự giúp đỡ của người qua đường",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "169",
+      "question": "Biển báo nào báo hiệu 'Đường một chiều'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "170",
+      "question": "Tại nơi đường bộ giao nhau với đường sắt, quyền ưu tiên thuộc về phương tiện nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Phương tiện giao thông đường bộ",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Phương tiện giao thông đường sắt",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Phương tiện nào đến trước thì được đi trước",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "171",
+      "question": "Khi điều khiển xe vào ban đêm, người lái xe cần chú ý điều gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Sử dụng đèn chiếu xa khi không có xe đi ngược chiều",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ và tăng cường quan sát",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Liên tục bật đèn pha cốt để ra hiệu",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "172",
+      "question": "Biển báo nào báo hiệu 'Đường dành cho ô tô'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "173",
+      "question": "Người tham gia giao thông có nghĩa vụ gì khi có tín hiệu đèn giao thông màu vàng?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Dừng lại trước vạch dừng, trừ trường hợp đã vượt quá vạch dừng thì được đi tiếp",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Nhanh chóng đi qua giao lộ",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Dừng lại ngay lập tức",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "174",
+      "question": "Trong trường hợp xe bị chết máy đột ngột trên đường đèo dốc, người lái xe phải xử lý như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Kéo phanh tay và gọi cứu hộ",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Về số thấp và sử dụng phanh động cơ kết hợp phanh chân để kiểm soát tốc độ",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tắt máy và để xe trôi tự do",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "175",
+      "question": "Biển báo nào báo hiệu 'Đi chậm'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "176",
+      "question": "Người tham gia giao thông phải đi bên phải theo chiều đi của mình, đi đúng làn đường, phần đường quy định; chỉ được chuyển làn đường ở những nơi cho phép. Đúng hay sai?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đúng",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Sai",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "177",
+      "question": "Khi điều khiển xe ô tô rẽ phải ở nơi đường giao nhau, người lái xe cần thực hiện các thao tác nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, bật đèn tín hiệu rẽ phải",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Kiểm tra gương chiếu hậu phía phải để đảm bảo an toàn",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tăng tốc để nhanh chóng vượt qua giao lộ",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "178",
+      "question": "Biển báo nào báo hiệu 'Giao nhau với đường không ưu tiên'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "179",
+      "question": "Hành vi nào dưới đây bị nghiêm cấm khi điều khiển phương tiện tham gia giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Chuyển làn đường không có tín hiệu báo trước",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Dừng xe, đỗ xe trái quy định",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bật đèn pha khi đi trong khu dân cư",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "180",
+      "question": "Khi xe ô tô đang chạy với tốc độ cao, muốn dừng xe khẩn cấp, người lái xe cần thực hiện thao tác nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nhả hết chân ga, đạp phanh từ từ",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Đạp hết côn, đạp phanh mạnh",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đạp hết phanh đồng thời kết hợp phanh động cơ (đối với xe số sàn) hoặc phanh bằng cấp số thấp (đối với xe số tự động)",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "181",
+      "question": "Biển báo nào báo hiệu 'Đường hầm'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "182",
+      "question": "Trong các trường hợp dưới đây, người điều khiển xe mô tô hai bánh, xe gắn máy được phép chở tối đa mấy người?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Một người",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Hai người, nếu chở người bệnh đi cấp cứu hoặc áp giải người có hành vi vi phạm pháp luật",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Ba người trong mọi trường hợp",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "183",
+      "question": "Khi phát hiện xe phía trước có tín hiệu xin vượt, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc độ để không cho xe phía sau vượt",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, đi sát lề đường bên phải và nhường đường cho xe phía sau vượt",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Chuyển làn đường để tránh xe phía sau",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "184",
+      "question": "Biển báo nào báo hiệu 'Đường dành cho người đi bộ'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "185",
+      "question": "Trong trường hợp xe mô tô, xe gắn máy bị tai nạn và người lái xe bị thương nặng, người chứng kiến tai nạn phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bảo vệ hiện trường, đặt biển cảnh báo",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Sơ cứu người bị nạn và gọi cấp cứu",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Nhanh chóng rời khỏi hiện trường",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "186",
+      "question": "Người lái xe không được dừng xe, đỗ xe tại các vị trí nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bên trái đường một chiều",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Trên cầu, gầm cầu vượt",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Nơi có biển báo cho phép đỗ xe",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "187",
+      "question": "Biển báo nào báo hiệu 'Đường trơn'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "188",
+      "question": "Khi điều khiển xe ô tô qua đường sắt không có rào chắn, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nhìn hai phía đường sắt, đảm bảo an toàn rồi cho xe qua",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tăng tốc để nhanh chóng vượt qua đường sắt",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Bật đèn pha và còi liên tục khi qua",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "189",
+      "question": "Biển báo nào báo hiệu 'Cấm xe ô tô rẽ phải'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "190",
+      "question": "Người điều khiển xe mô tô hai bánh, xe gắn máy có được sử dụng điện thoại di động khi đang lái xe không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép nếu sử dụng tai nghe",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu xe đang dừng đỗ",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "191",
+      "question": "Khi có xe cứu hỏa, xe cứu thương đang làm nhiệm vụ khẩn cấp đi đến, người tham gia giao thông phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc độ để tránh",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, nhường đường và đi sát vào lề đường hoặc dừng lại",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tiếp tục đi bình thường",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "192",
+      "question": "Biển báo nào báo hiệu 'Cấm ô tô và xe máy'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "193",
+      "question": "Khi lái xe ô tô qua đường gồ ghề, người lái xe cần chú ý điều gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc độ để xe vượt qua nhanh",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ và đi từ từ để tránh xóc nảy, hỏng hóc xe",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đi sát lề đường để tránh các xe khác",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "194",
+      "question": "Biển báo nào báo hiệu 'Hết tốc độ tối thiểu'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "195",
+      "question": "Người ngồi trên xe mô tô hai bánh, xe gắn máy có được đội mũ bảo hiểm có cài quai đúng quy cách khi tham gia giao thông không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Có",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "196",
+      "question": "Khi lái xe trên đường đèo dốc, người lái xe cần chú ý điều gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không rà phanh liên tục khi xuống dốc",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Giữ khoảng cách an toàn với xe phía trước",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tăng tốc khi lên dốc để nhanh chóng vượt qua",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "197",
+      "question": "Biển báo nào báo hiệu 'Cấm đi ngược chiều'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "198",
+      "question": "Tại nơi đường giao nhau không có tín hiệu đèn, người lái xe phải nhường đường như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nhường đường cho xe đi từ bên phải đến",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Nhường đường cho xe đi từ bên trái đến",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Phương tiện nào đến trước thì được đi trước",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "199",
+      "question": "Khi điều khiển xe ô tô trên đường cao tốc, người lái xe cần tuân thủ các quy định nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi đúng tốc độ cho phép và giữ khoảng cách an toàn",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không lùi xe, quay đầu xe trên đường cao tốc",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Có thể dừng đỗ tùy ý ở lề đường",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "200",
+      "question": "Biển báo nào báo hiệu 'Nguy hiểm có trẻ em'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "201",
+      "question": "Người đủ bao nhiêu tuổi trở lên thì được lái xe mô tô hai bánh có dung tích xi lanh từ 50 cm3 đến dưới 175 cm3?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "16 tuổi",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "18 tuổi",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "20 tuổi",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "202",
+      "question": "Khi điều khiển xe vào đường hẹp, người lái xe cần chú ý điều gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc độ để nhanh chóng thoát khỏi đường hẹp",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, quan sát kỹ hai bên và đi chậm",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bấm còi liên tục để các xe khác tránh đường",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "203",
+      "question": "Biển báo nào báo hiệu 'Cấm dừng và đỗ xe'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "204",
+      "question": "Người lái xe phải tuân thủ quy định nào về tốc độ khi điều khiển xe trên đường?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi đúng tốc độ cho phép và giữ khoảng cách an toàn với xe phía trước",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Có thể vượt quá tốc độ nếu đường vắng",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Đi chậm hơn tốc độ tối thiểu",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "205",
+      "question": "Khi đi qua đoạn đường có nhiều xe đỗ lề đường, người lái xe cần chú ý điều gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ và chú ý quan sát các cửa xe có thể mở bất ngờ",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Giữ khoảng cách an toàn với các xe đỗ",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bấm còi liên tục để cảnh báo",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "206",
+      "question": "Biển báo nào báo hiệu 'Cấm xe đạp'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "207",
+      "question": "Trong trường hợp khẩn cấp, người lái xe có được vượt đèn đỏ không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không được vượt trong mọi trường hợp",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép nếu có tín hiệu ưu tiên",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu không gây nguy hiểm",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "208",
+      "question": "Khi xe bị thủng lốp trên đường, người lái xe phải làm gì để đảm bảo an toàn?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, bật đèn cảnh báo nguy hiểm",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Đưa xe vào vị trí an toàn trên lề đường hoặc khu vực cho phép dừng đỗ",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tiếp tục chạy cho đến khi tìm được gara sửa chữa",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "209",
+      "question": "Biển báo nào báo hiệu 'Đường dành cho xe thô sơ'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "210",
+      "question": "Người tham gia giao thông có trách nhiệm chấp hành các tín hiệu, hiệu lệnh của người điều khiển giao thông. Đúng hay sai?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đúng",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Sai",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "211",
+      "question": "Khi điều khiển xe ô tô trên đường trơn trượt, người lái xe cần chú ý điều gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, đi số thấp",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không phanh gấp, không đánh lái đột ngột",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tăng tốc để nhanh chóng thoát khỏi đoạn đường trơn",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "212",
+      "question": "Biển báo nào báo hiệu 'Khu dân cư'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "213",
+      "question": "Trong trường hợp nào, người điều khiển xe mô tô hai bánh, xe gắn máy không được kéo theo xe khác?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Khi xe được kéo không có người điều khiển",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Khi xe được kéo là xe đạp",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Khi xe được kéo là xe máy điện",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "214",
+      "question": "Khi điều khiển xe ô tô trên đường có sương mù dày đặc, người lái xe cần chú ý điều gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bật đèn sương mù hoặc đèn chiếu gần",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, giữ khoảng cách an toàn lớn hơn bình thường",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bật đèn pha để nhìn rõ hơn",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "215",
+      "question": "Biển báo nào báo hiệu 'Cấm rẽ trái'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "216",
+      "question": "Tại nơi đường bộ giao nhau cùng mức với đường sắt, khi có chuông báo hiệu hoặc thanh chắn đã hạ xuống, người tham gia giao thông phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Nhanh chóng vượt qua đường sắt",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Dừng lại ngay và giữ khoảng cách an toàn với thanh chắn",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đi chậm và quan sát",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "217",
+      "question": "Khi phát hiện có người bị nạn trên đường, người lái xe cần làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Dừng xe ngay lập tức, bật đèn cảnh báo nguy hiểm",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Thực hiện sơ cứu ban đầu nếu có kiến thức và gọi cấp cứu",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Chờ đợi người khác đến giúp đỡ",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "218",
+      "question": "Biển báo nào báo hiệu 'Đường cao tốc'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "219",
+      "question": "Hành vi lạng lách, đánh võng trên đường bộ có bị nghiêm cấm hay không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bị nghiêm cấm",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không bị nghiêm cấm",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Bị nghiêm cấm tùy từng trường hợp",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "220",
+      "question": "Khi điều khiển xe ô tô vào đường cong, người lái xe cần thực hiện thao tác nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc độ để xe nhanh chóng vượt qua đường cong",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ trước khi vào đường cong và tăng dần khi xe đã qua đường cong",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đi sát mép đường bên ngoài để mở rộng tầm nhìn",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "221",
+      "question": "Biển báo nào báo hiệu 'Đường dành cho xe máy'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "222",
+      "question": "Việc lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép trong một số trường hợp đặc biệt",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "223",
+      "question": "Khi thấy trẻ em đang chơi gần đường, người lái xe cần xử lý như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giảm tốc độ, quan sát kỹ và sẵn sàng xử lý tình huống",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Bấm còi to để trẻ em tránh đường",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Dừng hẳn lại nếu thấy trẻ em có dấu hiệu băng qua đường",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "224",
+      "question": "Biển báo nào báo hiệu 'Chỗ ngoặt nguy hiểm vòng bên trái'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "225",
+      "question": "Người điều khiển xe mô tô hai bánh, xe gắn máy có được đi vào đường ngược chiều không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép khi có biển báo hướng dẫn",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "226",
+      "question": "Người tham gia giao thông có nghĩa vụ gì khi thấy người khác gặp tai nạn giao thông?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Kịp thời sơ cứu người bị nạn (nếu có khả năng)",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Bảo vệ hiện trường, báo cho cơ quan công an hoặc y tế gần nhất",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Nhanh chóng rời khỏi hiện trường",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "227",
+      "question": "Khi điều khiển xe trên đường có nhiều ổ gà, người lái xe cần làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc để vượt qua nhanh các ổ gà",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, tránh các ổ gà lớn và đi chậm",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đi sát vào lề đường",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "228",
+      "question": "Biển báo nào báo hiệu 'Nguy hiểm giao nhau với đường sắt'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "229",
+      "question": "Hành vi điều khiển xe mô tô, xe gắn máy không có gương chiếu hậu bên trái hoặc cả hai bên có bị xử phạt không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Không bị xử phạt",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Bị xử phạt theo quy định",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Chỉ bị xử phạt nếu gây tai nạn",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "230",
+      "question": "Khi xe ô tô đang đi trên đường mà bị nổ lốp, người lái xe cần làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giữ chặt vô lăng, từ từ giảm tốc độ và đưa xe vào lề đường",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Bật đèn cảnh báo nguy hiểm",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Phanh gấp để dừng xe ngay lập tức",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "231",
+      "question": "Biển báo nào báo hiệu 'Đường cong nguy hiểm vòng bên phải'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "232",
+      "question": "Người ngồi trên xe mô tô hai bánh, xe gắn máy có được sử dụng ô (dù) khi đang lái xe không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Không được phép",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Được phép nếu trời mưa to",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "233",
+      "question": "Khi xe bị kẹt trên đường ray xe lửa và có tàu hỏa đang đến gần, người lái xe phải làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Cố gắng đẩy xe ra khỏi đường ray",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Nhanh chóng rời khỏi xe và tìm nơi an toàn, sau đó báo cho cơ quan chức năng",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bật đèn pha và còi để báo hiệu cho tàu hỏa",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "234",
+      "question": "Biển báo nào báo hiệu 'Giao nhau với đường ưu tiên'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "235",
+      "question": "Tại nơi đường giao nhau có đèn tín hiệu giao thông, khi đèn tín hiệu màu xanh bật sáng, người tham gia giao thông được phép làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Được phép đi thẳng hoặc rẽ theo hướng cho phép",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Được phép vượt xe",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Không được phép dừng đỗ",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "236",
+      "question": "Khi điều khiển xe vào buổi tối, người lái xe cần chú ý điều gì để không gây chói mắt cho người đi ngược chiều?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Sử dụng đèn chiếu xa liên tục",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Chuyển từ đèn chiếu xa sang đèn chiếu gần khi có xe đi ngược chiều",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bật đèn khẩn cấp",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "237",
+      "question": "Biển báo nào báo hiệu 'Đường hai chiều'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "238",
+      "question": "Việc điều khiển xe máy điện, xe đạp điện không đội mũ bảo hiểm có cài quai đúng quy cách có bị xử phạt không?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Bị xử phạt",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không bị xử phạt",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Chỉ bị xử phạt khi có tai nạn",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "239",
+      "question": "Khi xe ô tô đi vào đường ngập nước, người lái xe cần xử lý như thế nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đi chậm, giữ đều ga, đi số thấp",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Không dừng hoặc tắt máy giữa đường ngập",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Tăng tốc để vượt qua nhanh",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "240",
+      "question": "Biển báo nào báo hiệu 'Đường cấm xe tải'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "241",
+      "question": "Người điều khiển phương tiện tham gia giao thông phải giảm tốc độ khi nào?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Khi tầm nhìn bị hạn chế bởi sương mù, mưa",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Khi đi qua khu vực đông dân cư",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Khi xe phía sau xin vượt",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "242",
+      "question": "Khi điều khiển xe mô tô qua đường giao nhau có vạch sơn dành cho người đi bộ, người lái xe cần chú ý điều gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Tăng tốc để nhanh chóng qua đường",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Giảm tốc độ, quan sát và nhường đường cho người đi bộ",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bấm còi để người đi bộ tránh đường",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "243",
+      "question": "Biển báo nào báo hiệu 'Đường giao nhau với đường sắt không có rào chắn'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": true
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "244",
+      "question": "Hành vi vượt xe trong trường hợp nào dưới đây bị nghiêm cấm?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Vượt tại nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Vượt xe trên đường thẳng, thoáng",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Vượt xe khi có tín hiệu cho phép vượt",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "245",
+      "question": "Khi xe bị mất phanh trên đường dốc, người lái xe cần làm gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Về số thấp, sử dụng phanh động cơ",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Tìm cách đánh lái vào vách núi hoặc dải phân cách mềm để giảm tốc độ",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Đạp chân ga để tăng tốc độ",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "246",
+      "question": "Biển báo nào báo hiệu 'Hết đoạn đường cấm vượt'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
+    },
+    {
+      "id": "247",
+      "question": "Người điều khiển phương tiện tham gia giao thông có trách nhiệm chấp hành hiệu lệnh của đèn tín hiệu giao thông. Đúng hay sai?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Đúng",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Sai",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    },
+    {
+      "id": "248",
+      "question": "Khi điều khiển xe ô tô trên đường đông đúc, người lái xe cần chú ý điều gì?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Giữ khoảng cách an toàn với xe phía trước",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Hạn chế chuyển làn, vượt xe",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Bật đèn pha để gây chú ý",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "situation"
+      ],
+      "compulsory": false,
+      "img_url": null
+    },
+    {
+      "id": "249",
+      "question": "Biển báo nào báo hiệu 'Nguy hiểm có vật rơi'?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Biển 1",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "content": "Biển 2",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "content": "Biển 3",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "traffic-sign"
+      ],
+      "compulsory": false,
+      "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
+    },
+    {
+      "id": "250",
+      "question": "Tại nơi đường giao nhau, khi có cảnh sát giao thông ra hiệu lệnh, người tham gia giao thông phải tuân thủ hiệu lệnh của ai?",
+      "answer": [
+        {
+          "id": 1,
+          "content": "Hiệu lệnh của cảnh sát giao thông",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "content": "Đèn tín hiệu giao thông",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "content": "Biển báo hiệu đường bộ",
+          "correct": false
+        }
+      ],
+      "categories": [
+        "law"
+      ],
+      "compulsory": true,
+      "img_url": null
+    }
+  ],
+  "exam": [
+    {
+      "id": "88f3",
+      "userId": 1,
+      "examId": 8,
+      "timestamp": "2025-07-22T02:53:14.207Z",
+      "totalQuestions": 25,
+      "correctAnswers": 0,
+      "details": [
+        {
+          "questionId": "15",
+          "selectedAnswerId": "2",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "118",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "39",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "18",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "60",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "129",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "30",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "28",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "22",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "32",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "4",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "133",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "221",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "14",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "26",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "3",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "3",
+          "isCorrect": false
+        },
+        {
+          "questionId": "142",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "56",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "9",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "138",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "158",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "51",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "175",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "54",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "187",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "d437",
+      "userId": 1,
+      "examId": 4,
+      "timestamp": "2025-07-22T02:58:44.621Z",
+      "totalQuestions": 25,
+      "correctAnswers": 0,
+      "details": [
+        {
+          "questionId": "126",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "17",
+          "correctAnswerId": "3",
+          "isCorrect": false
+        },
+        {
+          "questionId": "4",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "21",
+          "correctAnswerId": "3",
+          "isCorrect": false
+        },
+        {
+          "questionId": "39",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "3",
+          "correctAnswerId": "3",
+          "isCorrect": false
+        },
+        {
+          "questionId": "13",
+          "correctAnswerId": "4",
+          "isCorrect": false
+        },
+        {
+          "questionId": "12",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "6",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "8",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "28",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "228",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "157",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "133",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "171",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "10",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "186",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "129",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "78",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "149",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "30",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "97",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "188",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "24",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "40",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "39c3",
+      "userId": 1,
+      "examId": 0,
+      "timestamp": "2025-08-22T04:38:38.402Z",
+      "totalQuestions": 25,
+      "correctAnswers": 0,
+      "details": [
+        {
+          "questionId": "65",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "123",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "190",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "2",
+          "correctAnswerId": "3",
+          "isCorrect": false
+        },
+        {
+          "questionId": "86",
+          "correctAnswerId": "3",
+          "isCorrect": false
+        },
+        {
+          "questionId": "193",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "239",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "103",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "207",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "78",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "226",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "213",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "109",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "225",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "202",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "99",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "197",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "53",
+          "correctAnswerId": "3",
+          "isCorrect": false
+        },
+        {
+          "questionId": "125",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "75",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "73",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "242",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "114",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "3",
+          "correctAnswerId": "3",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "6bef",
+      "userId": 1,
+      "examId": 0,
+      "timestamp": "2025-08-24T12:46:14.423Z",
+      "totalQuestions": 25,
+      "correctAnswers": 3,
+      "details": [
+        {
+          "questionId": "6",
+          "selectedAnswerId": "3",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "34",
+          "selectedAnswerId": "2",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "242",
+          "selectedAnswerId": "3",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "128",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": true
+        },
+        {
+          "questionId": "5",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "87",
+          "selectedAnswerId": "3",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "147",
+          "selectedAnswerId": "1",
+          "correctAnswerId": "1",
+          "isCorrect": true
+        },
+        {
+          "questionId": "174",
+          "selectedAnswerId": "2",
+          "correctAnswerId": "2",
+          "isCorrect": true
+        },
+        {
+          "questionId": "88",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "71",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "64",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "162",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "9",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "93",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "145",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "219",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "20",
+          "correctAnswerId": "3",
+          "isCorrect": false
+        },
+        {
+          "questionId": "193",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "163",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "123",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "60",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "36",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        },
+        {
+          "questionId": "150",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "65",
+          "correctAnswerId": "1",
+          "isCorrect": false
+        },
+        {
+          "questionId": "216",
+          "correctAnswerId": "2",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "role": "admin",
+      "username": "Admin",
+      "password": "admin123"
+    },
+    {
+      "id": "2",
+      "role": "user",
+      "username": "Ngoc Mai",
+      "password": "user123"
+    }
+  ]
+}
