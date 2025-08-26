@@ -23,6 +23,10 @@ const titles = [
     name: "Lịch sử thi",
     href: "/exam",
   },
+  {
+    name: "Các câu bạn hay sai",
+    href: "/frequently-wrong",
+  }
 ];
 
 export function Header({ scrollY }: HeaderProps) {

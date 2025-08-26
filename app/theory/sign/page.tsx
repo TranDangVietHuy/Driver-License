@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 const Sign = () => {
   const [questions, setQuestions] = useState([]);
-  useEffect(() => {
-    const fetchQuestions = async () => {
+  const [answers, setAnswers] = useState<{ [key: string]: string }>({});
+  const fetchQuestions = async () => {
       try {
         const response = await fetch("http://localhost:9999/questions");
         const data = await response.json();
@@ -14,12 +14,20 @@ const Sign = () => {
         console.error("Error fetching questions:", error);
       }
     };
+
+
+  useEffect(() => {
+    
     fetchQuestions();
-  });
+
+  }, []);
   return (
     <>
       <Question
         questions={questions.filter((q: any) => q.categories == "traffic-sign")}
+        answers={answers}
+        setAnswers={setAnswers}
+        setQuestions={setQuestions}
       />
     </>
   );
