@@ -15,24 +15,18 @@ const Law = () => {
     }
   };
 
-  const getAnswers = async () => {
-    const answ = questions.map((q: any) => ({ [q.id]: q.selectedAnswer }));
-    setAnswers(Object.assign({}, ...answ));
-    console.log("Answers fetched:", answ);
-  };
 
   useEffect(() => {
     fetchQuestions();
-    getAnswers();
   },[]);
+
   return (
     <>
       <Question
-        questions={questions.filter((q: any) => q.categories == "law")}
-        fetchQuestions={fetchQuestions}
+        questions={questions.filter((q: any) => q.categories.includes("law"))}
         answers={answers}
         setAnswers={setAnswers}
-        getAnswers={getAnswers}
+        setQuestions={setQuestions}
 
       />
     </>

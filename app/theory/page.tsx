@@ -9,8 +9,127 @@ import {
 import Link from "next/link";
 import { Progress } from "@radix-ui/react-progress";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 const page = () => {
+  const [user, setUser] = useState<any>(null);
+  const [progress, setProgress] = useState<any[]>([]);
+  const [questions, setQuestions] = useState<any[]>([]);
+
+  // Get user from localStorage
+  const getUser = () => {
+    const userData = localStorage.getItem('user');
+    if (userData) {
+      const parsedUser = JSON.parse(userData);
+      setUser(parsedUser);
+      return parsedUser;
+    }
+    return null;
+  };
+
+  // Fetch user progress
+  const fetchProgress = async (userId: number) => {
+    try {
+      const response = await fetch(`http://localhost:9999/progress?userId=${userId}`);
+      const data = await response.json();
+      setProgress(data);
+    } catch (error) {
+      console.error("Error fetching progress:", error);
+    }
+  };
+
+  // Fetch all questions to count by category
+  const fetchQuestions = async () => {
+    try {
+      const response = await fetch("http://localhost:9999/questions");
+      const data = await response.json();
+      setQuestions(data.questions || []);
+    } catch (error) {
+      console.error("Error fetching questions:", error);
+    }
+  };
+
+  // Calculate completion percentage for a category
+  const calculateCompletion = (category: string) => {
+    const categoryQuestions = questions.filter(q => 
+      Array.isArray(q.categories) ? q.categories.includes(category) : q.categories === category
+    );
+    const totalQuestions = categoryQuestions.length;
+    
+    if (totalQuestions === 0) return 0;
+    
+    const completedQuestions = progress.filter(p => 
+      p.answered && categoryQuestions.some(q => q.id === p.questionId)
+    ).length;
+    
+    return Math.round((completedQuestions / totalQuestions) * 100);
+  };
+
+  // Get question count for a category
+  const getQuestionCount = (category: string) => {
+    const categoryQuestions = questions.filter(q => 
+      Array.isArray(q.categories) ? q.categories.includes(category) : q.categories === category
+    );
+    return categoryQuestions.length;
+  };
+
+  // Get completed question count for a category
+  const getCompletedCount = (category: string) => {
+    const categoryQuestions = questions.filter(q => 
+      Array.isArray(q.categories) ? q.categories.includes(category) : q.categories === category
+    );
+    
+    const completedQuestions = progress.filter(p => 
+      p.answered && categoryQuestions.some(q => q.id === p.questionId)
+    ).length;
+    
+    return completedQuestions;
+  };
+
+  useEffect(() => {
+    const loadedUser = getUser();
+    fetchQuestions();
+    
+    if (loadedUser && loadedUser.id) {
+      fetchProgress(loadedUser.id);
+    }
+  }, []);
+
+  // Define topics with category mapping
+  const topicsConfig = [
+    {
+      id: 1,
+      title: "Luật giao thông",
+      category: "law",
+      icon: "👮",
+      estimatedTime: "2 giờ",
+      href: "/theory/law",
+    },
+    {
+      id: 6,
+      title: "Biển báo giao thông", 
+      category: "traffic-sign",
+      icon: "🚸",
+      estimatedTime: "2 giờ",
+      href: "/theory/sign",
+    },
+    {
+      id: 2,
+      title: "Giải sa hình",
+      category: "situation",
+      icon: "🚛", 
+      estimatedTime: "1.5 giờ",
+      href: "/theory/situation",
+    },
+  ];
+
+  // Generate topics with dynamic data
+  const topics = topicsConfig.map(topic => ({
+    ...topic,
+    questions: getQuestionCount(topic.category),
+    completed: calculateCompletion(topic.category),
+    completedCount: getCompletedCount(topic.category)
+  }));
   return (
     <div>
       <Button className="text-white group cursor-pointer border border-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 mt-8 ms-12">
@@ -67,8 +186,7 @@ const page = () => {
                     <div className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-green-400" />
                       <span className="text-sm text-slate-400">
-                        {Math.round((topic.questions * topic.completed) / 100)}{" "}
-                        câu đã hoàn thành
+                        {topic.completedCount} / {topic.questions} câu đã hoàn thành
                       </span>
                     </div>
                     <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-blue-400 group-hover:translate-x-1 transition-all duration-300" />
@@ -79,38 +197,15 @@ const page = () => {
           </Link>
         ))}
       </div>
+      
+      {/* Loading state */}
+      {questions.length === 0 && (
+        <div className="flex justify-center items-center min-h-[200px]">
+          <p className="text-white">Loading progress data...</p>
+        </div>
+      )}
     </div>
   );
 };
 
 export default page;
-
-const topics = [
-  {
-    id: 1,
-    title: "Luật giao thông",
-    questions: 100,
-    completed: 35,
-    icon: "👮",
-    estimatedTime: "2 giờ",
-    href: "/theory/law",
-  },
-  {
-    id: 6,
-    title: "Biển báo giao thông",
-    questions: 65,
-    completed: 20,
-    icon: "🚸",
-    estimatedTime: "2 giờ",
-    href: "/theory/sign",
-  },
-  {
-    id: 2,
-    title: "Giải sa hình",
-    questions: 35,
-    completed: 60,
-    icon: "🚛",
-    estimatedTime: "1.5 giờ",
-    href: "/theory/situation",
-  },
-];
