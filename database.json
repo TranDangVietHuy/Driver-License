@@ -7106,7 +7106,8 @@
       "id": "c981",
       "userId": "2",
       "questionId": "1",
-      "selectedAnswer": 3
+      "selectedAnswer": 1,
+      "answered": true
     },
     {
       "id": "a521",
