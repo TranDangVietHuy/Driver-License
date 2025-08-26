@@ -43,7 +43,18 @@ const page = () => {
     try {
       const response = await fetch("http://localhost:9999/questions");
       const data = await response.json();
-      setQuestions(data.questions || []);
+
+      // Handle different response structures
+      if (Array.isArray(data)) {
+        // console.log("Setting questions from array:", data.length);
+        setQuestions(data);
+      } else if (data && Array.isArray(data.questions)) {
+        // console.log("Setting questions from data.questions:", data.questions.length);
+        setQuestions(data.questions);
+      } else {
+        console.error("Unexpected response structure:", data);
+        setQuestions([]);
+      }
     } catch (error) {
       console.error("Error fetching questions:", error);
     }
@@ -51,19 +62,23 @@ const page = () => {
 
   // Calculate completion percentage for a category
   const calculateCompletion = (category: string) => {
+
     const categoryQuestions = questions.filter(q => 
       Array.isArray(q.categories) ? q.categories.includes(category) : q.categories === category
     );
     const totalQuestions = categoryQuestions.length;
-    
+
     if (totalQuestions === 0) return 0;
     
     const completedQuestions = progress.filter(p => 
       p.answered && categoryQuestions.some(q => q.id === p.questionId)
     ).length;
     
-    return Math.round((completedQuestions / totalQuestions) * 100);
+    return (completedQuestions * 100 / totalQuestions);
   };
+
+
+
 
   // Get question count for a category
   const getQuestionCount = (category: string) => {
@@ -73,12 +88,15 @@ const page = () => {
     return categoryQuestions.length;
   };
 
+
+
+
   // Get completed question count for a category
   const getCompletedCount = (category: string) => {
     const categoryQuestions = questions.filter(q => 
       Array.isArray(q.categories) ? q.categories.includes(category) : q.categories === category
     );
-    
+
     const completedQuestions = progress.filter(p => 
       p.answered && categoryQuestions.some(q => q.id === p.questionId)
     ).length;
@@ -94,6 +112,15 @@ const page = () => {
       fetchProgress(loadedUser.id);
     }
   }, []);
+
+  // useEffect(() => {
+  //   console.log("=== STATE DEBUG ===");
+  //   console.log("Questions state:", questions);
+  //   console.log("Questions length:", questions.length);
+  //   console.log("First question:", questions[0]);
+  //   console.log("Progress state:", progress);
+  //   console.log("User state:", user);
+  // }, [questions, progress, user]);
 
   // Define topics with category mapping
   const topicsConfig = [
@@ -124,12 +151,25 @@ const page = () => {
   ];
 
   // Generate topics with dynamic data
-  const topics = topicsConfig.map(topic => ({
-    ...topic,
-    questions: getQuestionCount(topic.category),
-    completed: calculateCompletion(topic.category),
-    completedCount: getCompletedCount(topic.category)
-  }));
+  const topics = topicsConfig.map(topic => {
+    const questionCount = getQuestionCount(topic.category);
+    const completion = calculateCompletion(topic.category);
+    const completedCount = getCompletedCount(topic.category);
+    
+    console.log(`${topic.title} stats:`, {
+      category: topic.category,
+      questionCount,
+      completion,
+      completedCount
+    });
+    
+    return {
+      ...topic,
+      questions: questionCount,
+      completed: Math.round(completion),
+      completedCount: completedCount
+    };
+  });
   return (
     <div>
       <Button className="text-white group cursor-pointer border border-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 mt-8 ms-12">

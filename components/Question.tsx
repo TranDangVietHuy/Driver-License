@@ -40,7 +40,7 @@ const Question = ({
 
   const getProgress = async (userId:number) => {
     try{
-      const res = await fetch(`http://localhost:9999/progress?userId=${userId}`); // Fixed query param
+      const res = await fetch(`http://localhost:9999/progress?userId=${userId}`); 
       const data = await res.json();
       setProgress(data);
       console.log("Progress loaded:", data);
@@ -50,14 +50,14 @@ const Question = ({
   }
 
   useEffect(() => {
-    const loadedUser = getUser(); // Get user synchronously
+    const loadedUser = getUser(); 
     console.log("Loaded user:", loadedUser);
     if(loadedUser && loadedUser.id){
-      getProgress(loadedUser.id); // Use the returned user directly
+      getProgress(loadedUser.id); 
     }
   },[]);
 
-  // Separate useEffect to handle user state changes
+
   useEffect(() => {
     if(user && user.id) {
       console.log("User state updated:", user);
@@ -101,11 +101,11 @@ const Question = ({
         });
       }
       
-      // Refresh progress after updating
+
       getProgress(user.id);
     }
     
-    // Always show answer (for both logged in and guest users)
+
     setShowAnswers(prev => ({ ...prev, [questionId]: true }));
   }
   const handleSelectOption = async (questionId: string, selectedId: string) => {
@@ -143,7 +143,7 @@ const Question = ({
         getProgress(user.id);
       }
     }
-    // If no user, just update local state (guest mode)
+    // If no user, update local state (guest mode)
   }
   return (
     <>
