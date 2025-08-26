@@ -14,7 +14,6 @@ import {
   Check,
   X,
   Save,
-  Cancel,
 } from "lucide-react";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
@@ -132,7 +131,16 @@ const AdminPage = () => {
   };
 
   const handleSaveEdit = async () => {
-    if (!editingId) return;
+    if (!editingId || !editForm.question) {
+      toast.error("Vui lòng điền đầy đủ thông tin!");
+      return;
+    }
+
+    const hasCorrectAnswer = editForm.answer?.some((a) => a.correct);
+    if (!hasCorrectAnswer) {
+      toast.error("Vui lòng chọn ít nhất một đáp án đúng!");
+      return;
+    }
 
     try {
       const response = await fetch(
@@ -148,7 +156,7 @@ const AdminPage = () => {
 
       if (response.ok) {
         toast.success("Cập nhật câu hỏi thành công!");
-        fetchQuestions();
+        await fetchQuestions();
         setEditingId(null);
         setEditForm({});
       } else {
@@ -158,6 +166,11 @@ const AdminPage = () => {
       console.error("Lỗi khi cập nhật:", error);
       toast.error("Có lỗi xảy ra khi cập nhật!");
     }
+  };
+
+  const handleCancelEdit = () => {
+    setEditingId(null);
+    setEditForm({});
   };
 
   const handleDelete = async (id: string) => {
@@ -170,7 +183,7 @@ const AdminPage = () => {
 
       if (response.ok) {
         toast.success("Xóa câu hỏi thành công!");
-        fetchQuestions();
+        await fetchQuestions();
       } else {
         toast.error("Xóa câu hỏi thất bại!");
       }
@@ -182,8 +195,20 @@ const AdminPage = () => {
 
   const handleAddQuestion = async () => {
     // Validation
-    if (!newQuestion.question || !newQuestion.categories?.length) {
-      toast.error("Vui lòng điền đầy đủ thông tin!");
+    if (!newQuestion.question?.trim()) {
+      toast.error("Vui lòng nhập câu hỏi!");
+      return;
+    }
+
+    if (!newQuestion.categories?.length) {
+      toast.error("Vui lòng chọn danh mục!");
+      return;
+    }
+
+    // Kiểm tra tất cả đáp án có nội dung
+    const emptyAnswers = newQuestion.answer?.filter((a) => !a.content.trim());
+    if (emptyAnswers && emptyAnswers.length > 0) {
+      toast.error("Vui lòng điền đầy đủ nội dung cho tất cả đáp án!");
       return;
     }
 
@@ -194,10 +219,21 @@ const AdminPage = () => {
     }
 
     try {
-      const nextId = Math.max(...questions.map((q) => parseInt(q.id))) + 1;
+      // Tạo ID mới
+      const maxId =
+        questions.length > 0
+          ? Math.max(...questions.map((q) => parseInt(q.id)))
+          : 0;
+      const nextId = (maxId + 1).toString();
+
       const questionToAdd = {
         ...newQuestion,
-        id: nextId.toString(),
+        id: nextId,
+        question: newQuestion.question.trim(),
+        answer: newQuestion.answer?.map((a) => ({
+          ...a,
+          content: a.content.trim(),
+        })),
       };
 
       const response = await fetch("http://localhost:9999/questions", {
@@ -210,8 +246,9 @@ const AdminPage = () => {
 
       if (response.ok) {
         toast.success("Thêm câu hỏi thành công!");
-        fetchQuestions();
+        await fetchQuestions();
         setShowAddForm(false);
+        // Reset form
         setNewQuestion({
           question: "",
           answer: [
@@ -224,7 +261,10 @@ const AdminPage = () => {
           img_url: null,
         });
       } else {
-        toast.error("Thêm câu hỏi thất bại!");
+        const errorData = await response.json();
+        toast.error(
+          `Thêm câu hỏi thất bại: ${errorData.message || "Lỗi không xác định"}`
+        );
       }
     } catch (error) {
       console.error("Lỗi khi thêm:", error);
@@ -232,9 +272,49 @@ const AdminPage = () => {
     }
   };
 
+  const handleCancelAdd = () => {
+    setShowAddForm(false);
+    setNewQuestion({
+      question: "",
+      answer: [
+        { id: 1, content: "", correct: false },
+        { id: 2, content: "", correct: false },
+        { id: 3, content: "", correct: false },
+      ],
+      categories: [],
+      compulsory: false,
+      img_url: null,
+    });
+  };
+
   const handleLogout = () => {
     localStorage.removeItem("user");
+    toast.success("Đăng xuất thành công!");
     router.push("/login");
+  };
+
+  // Hàm cập nhật đáp án cho form thêm mới
+  const updateNewQuestionAnswer = (
+    index: number,
+    field: "content" | "correct",
+    value: string | boolean
+  ) => {
+    const updatedAnswers = newQuestion.answer?.map((a, i) =>
+      i === index ? { ...a, [field]: value } : a
+    );
+    setNewQuestion({ ...newQuestion, answer: updatedAnswers });
+  };
+
+  // Hàm cập nhật đáp án cho form chỉnh sửa
+  const updateEditFormAnswer = (
+    index: number,
+    field: "content" | "correct",
+    value: string | boolean
+  ) => {
+    const updatedAnswers = editForm.answer?.map((a, i) =>
+      i === index ? { ...a, [field]: value } : a
+    );
+    setEditForm({ ...editForm, answer: updatedAnswers });
   };
 
   if (loading) {
@@ -347,65 +427,67 @@ const AdminPage = () => {
             <CardContent className="space-y-4">
               {/* Question */}
               <div>
-                <label className="block text-slate-300 mb-2">Câu hỏi</label>
+                <label className="block text-slate-300 mb-2">Câu hỏi *</label>
                 <textarea
-                  value={newQuestion.question}
+                  value={newQuestion.question || ""}
                   onChange={(e) =>
                     setNewQuestion({ ...newQuestion, question: e.target.value })
                   }
                   className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
                   rows={3}
+                  placeholder="Nhập nội dung câu hỏi..."
                 />
               </div>
 
               {/* Answers */}
               <div>
-                <label className="block text-slate-300 mb-2">Đáp án</label>
+                <label className="block text-slate-300 mb-2">Đáp án *</label>
                 {newQuestion.answer?.map((answer, index) => (
                   <div key={answer.id} className="flex items-center gap-2 mb-2">
                     <input
                       type="checkbox"
                       checked={answer.correct}
-                      onChange={(e) => {
-                        const updatedAnswers = newQuestion.answer?.map((a, i) =>
-                          i === index ? { ...a, correct: e.target.checked } : a
-                        );
-                        setNewQuestion({
-                          ...newQuestion,
-                          answer: updatedAnswers,
-                        });
-                      }}
+                      onChange={(e) =>
+                        updateNewQuestionAnswer(
+                          index,
+                          "correct",
+                          e.target.checked
+                        )
+                      }
                       className="w-4 h-4"
                     />
                     <input
                       type="text"
                       value={answer.content}
-                      onChange={(e) => {
-                        const updatedAnswers = newQuestion.answer?.map((a, i) =>
-                          i === index ? { ...a, content: e.target.value } : a
-                        );
-                        setNewQuestion({
-                          ...newQuestion,
-                          answer: updatedAnswers,
-                        });
-                      }}
+                      onChange={(e) =>
+                        updateNewQuestionAnswer(
+                          index,
+                          "content",
+                          e.target.value
+                        )
+                      }
                       className="flex-1 bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-1 text-white"
-                      placeholder={`Đáp án ${index + 1}`}
+                      placeholder={`Đáp án ${String.fromCharCode(65 + index)}`}
                     />
                   </div>
                 ))}
+                <p className="text-xs text-slate-400 mt-1">
+                  * Tích chọn vào ô checkbox để đáp án đó là đáp án đúng
+                </p>
               </div>
 
               {/* Settings */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
-                  <label className="block text-slate-300 mb-2">Danh mục</label>
+                  <label className="block text-slate-300 mb-2">
+                    Danh mục *
+                  </label>
                   <select
                     value={newQuestion.categories?.[0] || ""}
                     onChange={(e) =>
                       setNewQuestion({
                         ...newQuestion,
-                        categories: [e.target.value],
+                        categories: e.target.value ? [e.target.value] : [],
                       })
                     }
                     className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
@@ -438,7 +520,7 @@ const AdminPage = () => {
                 <div className="flex items-center gap-2 pt-8">
                   <input
                     type="checkbox"
-                    checked={newQuestion.compulsory}
+                    checked={newQuestion.compulsory || false}
                     onChange={(e) =>
                       setNewQuestion({
                         ...newQuestion,
@@ -460,11 +542,11 @@ const AdminPage = () => {
                   Lưu
                 </Button>
                 <Button
-                  onClick={() => setShowAddForm(false)}
+                  onClick={handleCancelAdd}
                   variant="outline"
                   className="border-slate-700 text-slate-300 hover:bg-slate-800"
                 >
-                  <Cancel className="w-4 h-4 mr-2" />
+                  <X className="w-4 h-4 mr-2" />
                   Hủy
                 </Button>
               </div>
@@ -483,69 +565,128 @@ const AdminPage = () => {
                 {editingId === question.id ? (
                   // Edit Form
                   <div className="space-y-4">
-                    <textarea
-                      value={editForm.question}
-                      onChange={(e) =>
-                        setEditForm({ ...editForm, question: e.target.value })
-                      }
-                      className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
-                      rows={3}
-                    />
+                    <div>
+                      <label className="block text-slate-300 mb-2">
+                        Câu hỏi
+                      </label>
+                      <textarea
+                        value={editForm.question || ""}
+                        onChange={(e) =>
+                          setEditForm({ ...editForm, question: e.target.value })
+                        }
+                        className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                        rows={3}
+                      />
+                    </div>
 
-                    {editForm.answer?.map((answer, index) => (
-                      <div key={answer.id} className="flex items-center gap-2">
-                        <input
-                          type="checkbox"
-                          checked={answer.correct}
-                          onChange={(e) => {
-                            const updatedAnswers = editForm.answer?.map(
-                              (a, i) =>
-                                i === index
-                                  ? { ...a, correct: e.target.checked }
-                                  : a
-                            );
+                    <div>
+                      <label className="block text-slate-300 mb-2">
+                        Đáp án
+                      </label>
+                      {editForm.answer?.map((answer, index) => (
+                        <div
+                          key={answer.id}
+                          className="flex items-center gap-2 mb-2"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={answer.correct}
+                            onChange={(e) =>
+                              updateEditFormAnswer(
+                                index,
+                                "correct",
+                                e.target.checked
+                              )
+                            }
+                            className="w-4 h-4"
+                          />
+                          <input
+                            type="text"
+                            value={answer.content}
+                            onChange={(e) =>
+                              updateEditFormAnswer(
+                                index,
+                                "content",
+                                e.target.value
+                              )
+                            }
+                            className="flex-1 bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-1 text-white"
+                          />
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div>
+                        <label className="block text-slate-300 mb-2">
+                          Danh mục
+                        </label>
+                        <select
+                          value={editForm.categories?.[0] || ""}
+                          onChange={(e) =>
                             setEditForm({
                               ...editForm,
-                              answer: updatedAnswers,
-                            });
-                          }}
-                        />
+                              categories: e.target.value
+                                ? [e.target.value]
+                                : [],
+                            })
+                          }
+                          className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                        >
+                          <option value="">Chọn danh mục</option>
+                          <option value="law">Luật giao thông</option>
+                          <option value="traffic-sign">Biển báo</option>
+                          <option value="situation">Tình huống</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label className="block text-slate-300 mb-2">
+                          URL hình ảnh
+                        </label>
                         <input
                           type="text"
-                          value={answer.content}
-                          onChange={(e) => {
-                            const updatedAnswers = editForm.answer?.map(
-                              (a, i) =>
-                                i === index
-                                  ? { ...a, content: e.target.value }
-                                  : a
-                            );
+                          value={editForm.img_url || ""}
+                          onChange={(e) =>
                             setEditForm({
                               ...editForm,
-                              answer: updatedAnswers,
-                            });
-                          }}
-                          className="flex-1 bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-1 text-white"
+                              img_url: e.target.value || null,
+                            })
+                          }
+                          className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
                         />
                       </div>
-                    ))}
+
+                      <div className="flex items-center gap-2 pt-8">
+                        <input
+                          type="checkbox"
+                          checked={editForm.compulsory || false}
+                          onChange={(e) =>
+                            setEditForm({
+                              ...editForm,
+                              compulsory: e.target.checked,
+                            })
+                          }
+                          className="w-4 h-4"
+                        />
+                        <label className="text-slate-300">Câu hỏi liệt</label>
+                      </div>
+                    </div>
 
                     <div className="flex gap-2">
                       <Button
                         onClick={handleSaveEdit}
-                        size="sm"
                         className="bg-green-600 hover:bg-green-700"
                       >
                         <Save className="w-4 h-4 mr-1" />
                         Lưu
                       </Button>
                       <Button
-                        onClick={() => setEditingId(null)}
-                        size="sm"
+                        onClick={handleCancelEdit}
                         variant="outline"
                         className="border-slate-700 text-slate-300"
                       >
-                        <Cancel className="w-4 h-4 mr-1" />
+                        <X className="w-4 h-4 mr-1" />
                         Hủy
                       </Button>
                     </div>
@@ -635,6 +776,10 @@ const AdminPage = () => {
                           src={question.img_url}
                           alt="Question illustration"
                           className="max-w-md rounded-md border border-slate-700/50"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = "none";
+                          }}
                         />
                       </div>
                     )}
