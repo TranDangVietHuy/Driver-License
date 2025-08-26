@@ -51,6 +51,9 @@ const Question = ({ questions }: { questions: any }) => {
                   );
                 })}
               </div>
+              <div className="relative w-full mb-6">
+                      <button onClick={() => onSubmitClick(q.id)} className='absolute right-0 top- bg-red-500 py-2 px-4 mb-4 border rounded-full text-white hover:bg-red-700'>Show Answer</button>
+                    </div>
             </Card>
           ))}
       </div>

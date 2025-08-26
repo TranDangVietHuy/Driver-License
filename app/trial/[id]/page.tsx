@@ -62,7 +62,7 @@ const Page = () => {
     setAnswers((prev) => ({ ...prev, [questionId]: selectedId }));
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async () => {x
     if (!window.confirm("Bạn chắc chắn muốn nộp bài?")) return;
 
     let correct = 0;
