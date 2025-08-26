@@ -171,7 +171,7 @@ export default function page() {
                     {q.answer.map((a: any) => {
                       const userAnswer = answers[q.id];
                       const correctAnswer = q.answer.find((ans: any) => ans.correct);
-        
+                        
                       let answerColor = "text-slate-300";
                       if (showAnswers.find(s => s.id === q.id)?.show) {
                         if (a.id.toString() === correctAnswer.id.toString()) {
