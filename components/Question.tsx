@@ -143,7 +143,8 @@ const Question = ({
         getProgress(user.id);
       }
     }
-    // If no user, just update local state
+    // If no user, update local state (guest mode)
+  }
   return (
     <>
       <Button className="text-white group cursor-pointer border border-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 mt-8 ms-12">
@@ -174,7 +175,7 @@ const Question = ({
                     (ans: any) => ans.correct
                   );
                   
-                  // For logged in users: use progress data 
+                  // For logged in users: use progress data
                   // For guest users: use showAnswers state
                   const isAnswerShown = user ? userAnswer?.answered : showAnswers[q.id];
                   const selectedAnswerId = user ? userAnswer?.selectedAnswer : answers[q.id];
