@@ -36,7 +36,6 @@ interface Question {
 const AdminPage = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [filteredQuestions, setFilteredQuestions] = useState<Question[]>([]);
-  const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [compulsoryFilter, setCompulsoryFilter] = useState("all");
@@ -59,7 +58,7 @@ const AdminPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Kiểm tra quyền admin
+    // Check quyền Admin
     const user = localStorage.getItem("user");
     if (!user) {
       router.push("/login");
@@ -85,11 +84,9 @@ const AdminPage = () => {
       const response = await fetch("http://localhost:9999/questions");
       const data = await response.json();
       setQuestions(data);
-      setLoading(false);
     } catch (error) {
       console.error("Lỗi khi tải câu hỏi:", error);
       toast.error("Không thể tải danh sách câu hỏi");
-      setLoading(false);
     }
   };
 
@@ -316,14 +313,6 @@ const AdminPage = () => {
     );
     setEditForm({ ...editForm, answer: updatedAnswers });
   };
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 flex items-center justify-center">
-        <div className="text-white text-xl">Đang tải...</div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 p-6">
