@@ -19,6 +19,7 @@ const page = () => {
   const [progress, setProgress] = useState<any[]>([]);
   const [questions, setQuestions] = useState<any[]>([]);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [deleteCate, setDeleteCate] = useState<string>('all');
 
   // Get user from localStorage
   const getUser = () => {
@@ -175,7 +176,7 @@ const page = () => {
     };
   });
 
-  const deleteProgress = async () => {
+  const deleteProgress = async (category: string) => {
     try {
       const res = await fetch(`http://localhost:9999/progress?userId=${user?.id}`);
       if (!res.ok) {
@@ -184,7 +185,27 @@ const page = () => {
       }
       const data = await res.json();
 
-      for (const item of data) {
+      let progressToDelete: any;
+      if (category === 'all') {
+        progressToDelete = data;
+      } else {
+        // Filter questions by category and extract only IDs
+        const categoryQuestions = questions.filter(q =>
+          Array.isArray(q.categories) ? q.categories.includes(category) : q.categories === category
+        );
+        const questionIds = categoryQuestions.map(q => q.id);
+        
+        // Filter progress data by question IDs
+        progressToDelete = data.filter((progressItem: any) => 
+          questionIds.includes(progressItem.questionId)
+        );
+        
+        console.log('category:', category);
+        console.log("questionIds for deletion:", questionIds);
+        console.log("progressToDelete:", progressToDelete);
+      }
+
+      for (const item of progressToDelete) {
         await fetch(`http://localhost:9999/progress/${item.id}`, {
           method: "DELETE"
         });
@@ -192,15 +213,17 @@ const page = () => {
 
       await fetchProgress(user.id);
       setShowDeleteConfirm(false);
-      toast.success("Đã xóa tất cả tiến độ thành công!");
+      toast.success(`Đã xóa tiến độ ${category === 'all' ? 'tất cả' : 'danh mục'} thành công!`);
     } catch (error) {
       console.error("Error deleting progress:", error);
       toast.error("Có lỗi xảy ra khi xóa tiến độ!");
     }
   }
 
-  const handleDeleteClick = () => {
+  const handleDeleteClick = (category:string) => {
+    setDeleteCate(category);
     setShowDeleteConfirm(true);
+    
   }
 
   const handleCancelDelete = () => {
@@ -216,14 +239,14 @@ const page = () => {
         </Link>
       </Button>
       {user && user.id && (
-        <Button onClick={handleDeleteClick} className="text-white group cursor-pointer border border-red-500 bg-red-500/20 hover:bg-red-500/40 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 mt-8 ms-12">
-          <ArchiveX className="w-4 h-4 mr-2" />
-          Xoá tiến độ ôn tập
-        </Button>
+          <Button onClick={() =>handleDeleteClick('all')} className="text-white group cursor-pointer border border-red-500 bg-red-500/20 hover:bg-red-500/40 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 mt-8 ms-12">
+            <ArchiveX className="w-4 h-4 mr-2" />
+            Xoá tiến độ ôn tập
+          </Button>
       )}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 px-24 py-24">
         {topics.map((topic, index) => (
-          <Link href={topic.href} key={topic.id}>
+          
             <Card
               key={topic.id}
               className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 hover:bg-slate-800/60 transition-all duration-500 hover:scale-105 hover:-translate-y-2 group cursor-pointer relative overflow-hidden"
@@ -233,23 +256,38 @@ const page = () => {
 
               <CardHeader className="relative z-10">
                 <div className="flex items-center justify-between mb-4">
-                  <CardTitle className="text-white text-lg font-bold group-hover:text-blue-400 transition-colors leading-tight uppercase">
-                    {topic.title}
-                  </CardTitle>
-                  <div
+                  <Link href={topic.href} key={topic.id}>
+                    <CardTitle className="text-white text-lg font-bold group-hover:text-blue-400 transition-colors leading-tight uppercase">
+                      {topic.title}
+                    </CardTitle>
+                  </Link>
+                  {/* <div
                     className="text-4xl mb-2 animate-bounce-gentle"
                     style={{ animationDelay: `${index * 150}ms` }}
                   >
                     {topic.icon}
+                  </div> */}
+                    <div className="relative">
+                      <div
+                    className="text-4xl mb-2 animate-bounce-gentle absolute left-0 top-0 -translate-x-[100px] -translate-y-[20px]"
+                    style={{ animationDelay: `${index * 150}ms` }}
+                  >
+                    {topic.icon}
                   </div>
+                  {user && user.id && (
+                    <Button onClick={() => handleDeleteClick(topic.category)} className="absolute -translate-y-[20px] translate-x-[10px] flex justify-content-center top-0 right-0  text-white group cursor-pointer border border-red-500 bg-red-500/20 hover:bg-red-500/40 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110  me-2">
+                      <ArchiveX className="w-4 h-4 text-white " />
+                    </Button>
+                    )}
+                    </div>
                 </div>
               </CardHeader>
-
-              <CardContent className="relative z-10">
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-slate-400 font-medium flex items-center space-x-1">
-                      <FileText className="w-4 h-4" />
+              <Link href={topic.href} key={topic.id}>
+                <CardContent className="relative z-10">
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-slate-400 font-medium flex items-center space-x-1">
+                        <FileText className="w-4 h-4" />
                       <span>{topic.questions} câu hỏi</span>
                     </span>
                     <span className="text-white font-bold">
@@ -283,8 +321,9 @@ const page = () => {
                   </div>
                 </div>
               </CardContent>
+              </Link>
             </Card>
-          </Link>
+          
         ))}
       </div>
 
@@ -298,7 +337,7 @@ const page = () => {
                 Xác nhận xóa tiến độ
               </h3>
               <p className="text-slate-300 mb-6">
-                Bạn có chắc chắn muốn xóa tất cả tiến độ ôn tập không? 
+                Bạn có chắc chắn muốn xóa {deleteCate === 'all' ? 'tất cả' : `tiến độ danh mục "${deleteCate}"`} không? 
                 <br />
                 <span className="text-red-400 font-semibold">Hành động này không thể hoàn tác!</span>
               </p>
@@ -310,7 +349,7 @@ const page = () => {
                   Hủy bỏ
                 </Button>
                 <Button
-                  onClick={deleteProgress}
+                  onClick={() => deleteProgress(deleteCate)}
                   className="px-6 py-2 bg-gradient-to-r from-rose-400 via-red-400 to-red-500 hover:from-rose-500 hover:via-red-500 hover:to-red-600 text-white border border-red-400 transition-all duration-300 ease-in-out transform hover:scale-105"
                 >
                   Xóa tiến độ
