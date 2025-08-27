@@ -18,7 +18,7 @@ import {
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
-interface Answer {
+interface Answer { // Định nghĩa cấu trúc dữ liệu
   id: number;
   content: string;
   correct: boolean;
@@ -44,6 +44,7 @@ const AdminPage = () => {
   const [editForm, setEditForm] = useState<Partial<Question>>({});
   const [showAddForm, setShowAddForm] = useState(false);
   const [newQuestion, setNewQuestion] = useState<Partial<Question>>({
+    // Partial - Utility Type giúp tạo ra 1 kiểu dữ liệu mới mà tất cả các thuộc tính của kiểu ban đầu đều trở thành optional
     question: "",
     answer: [
       { id: 1, content: "", correct: false },
@@ -192,7 +193,11 @@ const AdminPage = () => {
 
   const handleAddQuestion = async () => {
     // Validation
-    if (!newQuestion.question?.trim()) {
+    if (!newQuestion.question?.trim()) {  // Optional Chaining Operator
+      // Do newQuestion là 1 state kiểu Partial -> Các properties đều là Optional
+      // Typescript có thể coi nó là undefined
+      // undefined và null không có method trim() / length()
+      // => Sử dụng '?' để bảo vệ code khi truy cập vào Properties của null / undefined
       toast.error("Vui lòng nhập câu hỏi!");
       return;
     }
