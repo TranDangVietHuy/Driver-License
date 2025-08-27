@@ -5,17 +5,20 @@ import {
   ChevronRight,
   CornerUpLeft,
   FileText,
+  ArchiveX
 } from "lucide-react";
 import Link from "next/link";
 // import { Progress } from "@radix-ui/react-progress";
 import * as Progress from "@radix-ui/react-progress";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 const page = () => {
   const [user, setUser] = useState<any>(null);
   const [progress, setProgress] = useState<any[]>([]);
   const [questions, setQuestions] = useState<any[]>([]);
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
   // Get user from localStorage
   const getUser = () => {
@@ -171,6 +174,39 @@ const page = () => {
       completedCount: completedCount
     };
   });
+
+  const deleteProgress = async () => {
+    try {
+      const res = await fetch(`http://localhost:9999/progress?userId=${user?.id}`);
+      if (!res.ok) {
+        console.error("Error fetching progress for deletion:", res.statusText);
+        return;
+      }
+      const data = await res.json();
+
+      for (const item of data) {
+        await fetch(`http://localhost:9999/progress/${item.id}`, {
+          method: "DELETE"
+        });
+      }
+
+      await fetchProgress(user.id);
+      setShowDeleteConfirm(false);
+      toast.success("Đã xóa tất cả tiến độ thành công!");
+    } catch (error) {
+      console.error("Error deleting progress:", error);
+      toast.error("Có lỗi xảy ra khi xóa tiến độ!");
+    }
+  }
+
+  const handleDeleteClick = () => {
+    setShowDeleteConfirm(true);
+  }
+
+  const handleCancelDelete = () => {
+    setShowDeleteConfirm(false);
+  }
+
   return (
     <div>
       <Button className="text-white group cursor-pointer border border-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 mt-8 ms-12">
@@ -179,6 +215,12 @@ const page = () => {
           Quay lại
         </Link>
       </Button>
+      {user && user.id && (
+        <Button onClick={handleDeleteClick} className="text-white group cursor-pointer border border-red-500 bg-red-500/20 hover:bg-red-500/40 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 mt-8 ms-12">
+          <ArchiveX className="w-4 h-4 mr-2" />
+          Xoá tiến độ ôn tập
+        </Button>
+      )}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 px-24 py-24">
         {topics.map((topic, index) => (
           <Link href={topic.href} key={topic.id}>
@@ -245,6 +287,39 @@ const page = () => {
           </Link>
         ))}
       </div>
+
+      {/* Delete Confirmation Modal */}
+      {showDeleteConfirm && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-slate-800/90 backdrop-blur-xl border border-slate-700/50 rounded-lg p-8 max-w-md w-mx-4 shadow-2xl">
+            <div className="text-center">
+              <div className="text-6xl mb-4">⚠️</div>
+              <h3 className="text-xl font-bold text-white mb-4">
+                Xác nhận xóa tiến độ
+              </h3>
+              <p className="text-slate-300 mb-6">
+                Bạn có chắc chắn muốn xóa tất cả tiến độ ôn tập không? 
+                <br />
+                <span className="text-red-400 font-semibold">Hành động này không thể hoàn tác!</span>
+              </p>
+              <div className="flex gap-4 justify-center">
+                <Button
+                  onClick={handleCancelDelete}
+                  className="px-6 py-2 bg-slate-600 hover:bg-slate-500 text-white border border-slate-500 transition-all duration-200"
+                >
+                  Hủy bỏ
+                </Button>
+                <Button
+                  onClick={deleteProgress}
+                  className="px-6 py-2 bg-gradient-to-r from-rose-400 via-red-400 to-red-500 hover:from-rose-500 hover:via-red-500 hover:to-red-600 text-white border border-red-400 transition-all duration-300 ease-in-out transform hover:scale-105"
+                >
+                  Xóa tiến độ
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Loading state */}
       {questions.length === 0 && (

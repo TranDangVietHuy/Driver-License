@@ -22,14 +22,21 @@ interface ExamRecord {
   }[];
 }
 
-const ExamHistory = () => {
-  const [examHistory, setExamHistory] = useState<ExamRecord[]>([]);
-  const router = useRouter();
 
-  useEffect(() => {
-    const fetchHistory = async () => {
+const ExamHistory = ({}) => {
+  const [examHistory, setExamHistory] = useState<ExamRecord[]>([]);
+  const [user, setUser] = useState<any>(null);
+  const router = useRouter();
+  const getUser = () => {
+    const userData = localStorage.getItem('user');
+    if(userData){
+      setUser(JSON.parse(userData));
+    }
+  }
+
+  const fetchHistory = async (id:number) => {
       try {
-        const res = await fetch("http://localhost:9999/exam?userId=1");
+        const res = await fetch(`http://localhost:9999/exam?userId=${id}`);
         const data = await res.json();
         setExamHistory(data.reverse());
       } catch (err) {
@@ -37,8 +44,16 @@ const ExamHistory = () => {
       }
     };
 
-    fetchHistory();
+
+  useEffect(() => {
+    getUser(); // Load user first
   }, []);
+
+  useEffect(() => {
+    if (user && user.id) {
+      fetchHistory(user.id); // Run when user state updates
+    }
+  }, [user]);
 
   return (
     <>

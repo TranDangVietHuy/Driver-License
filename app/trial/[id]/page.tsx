@@ -8,7 +8,8 @@ import toast from "react-hot-toast";
 import Link from "next/link";
 
 const Page = () => {
-  const [questions, setQuestions] = useState([]);
+  const [questions, setQuestions] = useState<any[]>([]);
+  const [user,setUser] = useState<any>(null);
   const [answers, setAnswers] = useState<{ [key: string]: string }>({});
   const [score, setScore] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState(19 * 60);
@@ -18,8 +19,16 @@ const Page = () => {
     const shuffled = [...data].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   };
+  
+  const getUser = () => {
+    const userData = localStorage.getItem('user');
+    if(userData){
+      setUser(JSON.parse(userData));
+    }
+  }
 
   useEffect(() => {
+    getUser();
     const fetchQuestions = async () => {
       try {
         const response = await fetch("http://localhost:9999/questions");
@@ -82,7 +91,7 @@ const Page = () => {
     });
 
     const payload = {
-      userId: 1,
+      userId: user.id,
       examId,
       timestamp: new Date().toISOString(),
       totalQuestions: questions.length,
@@ -131,13 +140,13 @@ const Page = () => {
           </span>
         </div>
         <div className="flex items-center gap-4">
-          <Button
+          {/* <Button
             onClick={handleNavigation}
             className="text-white border border-white"
           >
             <CornerUpLeft className="w-4 h-4 mr-2" />
             Chọn đề khác
-          </Button>
+          </Button> */}
           <Button
             onClick={handleSubmit}
             className="text-white border border-white"
