@@ -7408,6 +7408,18 @@
       "createdAt": "2024-08-20T10:30:00.000Z",
       "isRead": false,
       "readAt": null
+    },
+    {
+      "id": "1756316739843",
+      "userId": "2",
+      "username": "Ngoc Mai",
+      "subject": "Cải thiện chất lượng hình ảnh",
+      "message": "Cải thiện chất lượng hình ảnh",
+      "questionContent": "Cải thiện chất lượng hình ảnh",
+      "type": "suggestion",
+      "createdAt": "2025-08-27T17:45:39.843Z",
+      "isRead": false,
+      "readAt": null
     }
   ]
 }
