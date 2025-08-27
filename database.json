@@ -1,4 +1,24 @@
 {
+  "user": [
+    {
+      "id": "1",
+      "role": "admin",
+      "username": "Admin",
+      "password": "admin123"
+    },
+    {
+      "id": "2",
+      "role": "user",
+      "username": "Ngoc Mai",
+      "password": "user123"
+    },
+    {
+      "id": "7d86",
+      "username": "mai@gmail.com",
+      "password": "123@Aaaa"
+    }
+  ],
+
   "questions": [
     {
       "id": "1",
@@ -20,9 +40,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": "https://media.tenor.com/v_Mr2yV4JCcAAAAM/hehe.gif"
     },
@@ -46,9 +64,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -72,9 +88,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -98,9 +112,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -124,9 +136,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -155,9 +165,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -186,9 +194,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -212,9 +218,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -238,9 +242,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -259,9 +261,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -285,9 +285,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -311,9 +309,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -342,9 +338,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -368,9 +362,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/317.jpg"
     },
@@ -394,9 +386,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/333.jpg"
     },
@@ -420,9 +410,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/358.jpg"
     },
@@ -446,9 +434,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/374.jpg"
     },
@@ -472,9 +458,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/390.jpg"
     },
@@ -498,9 +482,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/406.jpg"
     },
@@ -524,9 +506,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/436.jpg"
     },
@@ -550,9 +530,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -571,9 +549,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/465.jpg"
     },
@@ -592,9 +568,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": true,
       "img_url": "https://thibanglaixeonline.com/image250/499.jpg"
     },
@@ -613,9 +587,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": true,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -634,9 +606,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/556.jpg"
     },
@@ -660,9 +630,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -686,9 +654,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -712,9 +678,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -738,9 +702,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -764,9 +726,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -790,9 +750,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -816,9 +774,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -842,9 +798,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -868,9 +822,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -894,9 +846,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -920,9 +870,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -946,9 +894,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -972,9 +918,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -998,9 +942,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1024,9 +966,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1050,9 +990,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1076,9 +1014,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -1102,9 +1038,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1128,9 +1062,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1154,9 +1086,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1180,9 +1110,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1206,9 +1134,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1232,9 +1158,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -1258,9 +1182,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1284,9 +1206,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1310,9 +1230,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -1336,9 +1254,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -1362,9 +1278,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1388,9 +1302,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1414,9 +1326,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1440,9 +1350,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1466,9 +1374,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1492,9 +1398,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -1518,9 +1422,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1544,9 +1446,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1570,9 +1470,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1596,9 +1494,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -1622,9 +1518,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1648,9 +1542,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1674,9 +1566,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1700,9 +1590,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1731,9 +1619,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1762,9 +1648,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -1788,9 +1672,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1814,9 +1696,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -1840,9 +1720,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1866,9 +1744,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1892,9 +1768,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -1918,9 +1792,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1944,9 +1816,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -1970,9 +1840,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -1996,9 +1864,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -2022,9 +1888,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2048,9 +1912,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2074,9 +1936,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -2100,9 +1960,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2126,9 +1984,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2152,9 +2008,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2178,9 +2032,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2204,9 +2056,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -2230,9 +2080,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -2256,9 +2104,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -2282,9 +2128,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2308,9 +2152,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2334,9 +2176,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -2360,9 +2200,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2386,9 +2224,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2412,9 +2248,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -2438,9 +2272,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2464,9 +2296,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2490,9 +2320,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -2516,9 +2344,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2542,9 +2368,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2568,9 +2392,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -2594,9 +2416,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -2620,9 +2440,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -2646,9 +2464,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -2672,9 +2488,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2698,9 +2512,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2724,9 +2536,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2750,9 +2560,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2776,9 +2584,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -2802,9 +2608,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2828,9 +2632,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -2854,9 +2656,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -2880,9 +2680,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -2906,9 +2704,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -2932,9 +2728,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -2958,9 +2752,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -2984,9 +2776,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -3010,9 +2800,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3036,9 +2824,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3062,9 +2848,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -3088,9 +2872,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3114,9 +2896,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3140,9 +2920,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3166,9 +2944,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3192,9 +2968,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -3218,9 +2992,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3244,9 +3016,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3270,9 +3040,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3296,9 +3064,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3322,9 +3088,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -3348,9 +3112,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3374,9 +3136,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -3400,9 +3160,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3426,9 +3184,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -3452,9 +3208,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3478,9 +3232,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -3504,9 +3256,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3530,9 +3280,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3556,9 +3304,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3582,9 +3328,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -3608,9 +3352,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3634,9 +3376,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://truongdaylaixeoto.net/wp-content/uploads/2020/07/Bien-bao-duong-go-ghề.jpg"
     },
@@ -3660,9 +3400,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://truongdaylaixeoto.net/wp-content/uploads/2020/07/Sa-hinh-den-do.jpg"
     },
@@ -3686,9 +3424,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3712,9 +3448,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -3738,9 +3472,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3764,9 +3496,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3790,9 +3520,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3816,9 +3544,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3842,9 +3568,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -3868,9 +3592,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3894,9 +3616,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -3925,9 +3645,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3951,9 +3669,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -3977,9 +3693,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -4003,9 +3717,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": true,
       "img_url": null
     },
@@ -4029,9 +3741,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -4055,9 +3765,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -4081,9 +3789,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -4107,9 +3813,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4133,9 +3837,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4159,9 +3861,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -4185,9 +3885,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4211,9 +3909,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -4237,9 +3933,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -4263,9 +3957,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4289,9 +3981,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -4315,9 +4005,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -4341,9 +4029,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4367,9 +4053,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -4393,9 +4077,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -4419,9 +4101,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4445,9 +4125,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -4471,9 +4149,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -4497,9 +4173,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4523,9 +4197,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -4549,9 +4221,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -4570,9 +4240,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -4596,9 +4264,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -4622,9 +4288,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -4648,9 +4312,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -4674,9 +4336,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": true,
       "img_url": null
     },
@@ -4700,9 +4360,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -4726,9 +4384,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4752,9 +4408,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -4778,9 +4432,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -4804,9 +4456,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": true,
       "img_url": null
     },
@@ -4830,9 +4480,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -4856,9 +4504,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -4882,9 +4528,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -4908,9 +4552,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -4934,9 +4576,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4960,9 +4600,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -4986,9 +4624,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -5012,9 +4648,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5038,9 +4672,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -5059,9 +4691,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -5085,9 +4715,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5111,9 +4739,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -5137,9 +4763,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -5163,9 +4787,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -5189,9 +4811,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -5215,9 +4835,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -5241,9 +4859,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5267,9 +4883,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -5293,9 +4907,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -5319,9 +4931,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5345,9 +4955,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -5371,9 +4979,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -5397,9 +5003,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": true,
       "img_url": null
     },
@@ -5423,9 +5027,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -5444,9 +5046,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -5470,9 +5070,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5496,9 +5094,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -5522,9 +5118,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -5548,9 +5142,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5574,9 +5166,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -5600,9 +5190,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -5626,9 +5214,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5652,9 +5238,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -5678,9 +5262,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -5704,9 +5286,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5730,9 +5310,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -5756,9 +5334,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -5782,9 +5358,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5808,9 +5382,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -5834,9 +5406,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -5860,9 +5430,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -5886,9 +5454,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5912,9 +5478,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -5938,9 +5502,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -5964,9 +5526,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -5990,9 +5550,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -6016,9 +5574,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -6042,9 +5598,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": true,
       "img_url": null
     },
@@ -6068,9 +5622,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -6094,9 +5646,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -6120,9 +5670,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -6146,9 +5694,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -6172,9 +5718,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -6198,9 +5742,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -6224,9 +5766,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -6250,9 +5790,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -6276,9 +5814,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -6302,9 +5838,7 @@
           "correct": true
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -6328,9 +5862,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": false,
       "img_url": null
     },
@@ -6354,9 +5886,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -6380,9 +5910,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/449.jpg"
     },
@@ -6401,9 +5929,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -6427,9 +5953,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "situation"
-      ],
+      "categories": ["situation"],
       "compulsory": false,
       "img_url": null
     },
@@ -6453,9 +5977,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "traffic-sign"
-      ],
+      "categories": ["traffic-sign"],
       "compulsory": false,
       "img_url": "https://thibanglaixeonline.com/image250/525.jpg"
     },
@@ -6479,9 +6001,7 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     },
@@ -6505,13 +6025,12 @@
           "correct": false
         }
       ],
-      "categories": [
-        "law"
-      ],
+      "categories": ["law"],
       "compulsory": true,
       "img_url": null
     }
   ],
+
   "exam": [
     {
       "id": "88f3",
@@ -6672,435 +6191,9 @@
           "isCorrect": false
         }
       ]
-    },
-    {
-      "id": "d437",
-      "userId": 1,
-      "examId": 4,
-      "timestamp": "2025-07-22T02:58:44.621Z",
-      "totalQuestions": 25,
-      "correctAnswers": 0,
-      "details": [
-        {
-          "questionId": "126",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "17",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        },
-        {
-          "questionId": "4",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "21",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        },
-        {
-          "questionId": "39",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "3",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        },
-        {
-          "questionId": "13",
-          "correctAnswerId": "4",
-          "isCorrect": false
-        },
-        {
-          "questionId": "12",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "6",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "8",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "28",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "228",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "157",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "133",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "171",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "10",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "186",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "129",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "78",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "149",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "30",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "97",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "188",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "24",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "40",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "id": "39c3",
-      "userId": 1,
-      "examId": 0,
-      "timestamp": "2025-08-22T04:38:38.402Z",
-      "totalQuestions": 25,
-      "correctAnswers": 0,
-      "details": [
-        {
-          "questionId": "65",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "1",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "123",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "190",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "2",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        },
-        {
-          "questionId": "86",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        },
-        {
-          "questionId": "193",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "239",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "103",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "207",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "78",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "226",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "213",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "109",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "225",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "202",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "99",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "197",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "53",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        },
-        {
-          "questionId": "125",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "75",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "73",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "242",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "114",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "3",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "id": "6bef",
-      "userId": 1,
-      "examId": 0,
-      "timestamp": "2025-08-24T12:46:14.423Z",
-      "totalQuestions": 25,
-      "correctAnswers": 3,
-      "details": [
-        {
-          "questionId": "6",
-          "selectedAnswerId": "3",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "34",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "242",
-          "selectedAnswerId": "3",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "128",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "1",
-          "isCorrect": true
-        },
-        {
-          "questionId": "5",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "87",
-          "selectedAnswerId": "3",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "147",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "1",
-          "isCorrect": true
-        },
-        {
-          "questionId": "174",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "88",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "71",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "64",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "162",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "9",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "93",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "145",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "219",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "20",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        },
-        {
-          "questionId": "193",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "163",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "123",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "60",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "36",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "150",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "65",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "216",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        }
-      ]
     }
   ],
-  "user": [
-    {
-      "id": "1",
-      "role": "admin",
-      "username": "Admin",
-      "password": "admin123"
-    },
-    {
-      "id": "2",
-      "role": "user",
-      "username": "Ngoc Mai",
-      "password": "user123"
-    }
-  ],
+
   "progress": [
     {
       "id": "c981",
@@ -7301,6 +6394,40 @@
       "id": "44d5",
       "userId": "2",
       "questionId": "53",
+      "answered": true
+    },
+    {
+      "id": "ee8d",
+      "userId": "2",
+      "questionId": "55",
+      "selectedAnswer": 2,
+      "answered": true
+    },
+    {
+      "id": "a6b7",
+      "userId": "2",
+      "questionId": "58",
+      "selectedAnswer": 1
+    },
+    {
+      "id": "1c8d",
+      "userId": "ac88",
+      "questionId": "1",
+      "selectedAnswer": 2,
+      "answered": true
+    },
+    {
+      "id": "96ae",
+      "userId": "ac88",
+      "questionId": "2",
+      "selectedAnswer": 2,
+      "answered": true
+    },
+    {
+      "id": "1c3d",
+      "userId": "ac88",
+      "questionId": "3",
+      "selectedAnswer": 2,
       "answered": true
     }
   ]

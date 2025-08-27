@@ -1,6 +1,4 @@
 "use client";
-
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Bike, ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -26,12 +24,10 @@ const titles = [
   {
     name: "Các câu bạn hay sai",
     href: "/frequently-wrong",
-  }
+  },
 ];
 
 export function Header({ scrollY }: HeaderProps) {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 px-16 py-1 ${
@@ -81,29 +77,6 @@ export function Header({ scrollY }: HeaderProps) {
             </Button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <div className="md:hidden mt-4 p-4 bg-slate-800/95 backdrop-blur-xl rounded-2xl border border-slate-700/50">
-            <nav className="flex flex-col space-y-4">
-              {titles.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-slate-300 hover:text-white transition-colors py-2 font-medium"
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <Button
-                variant="ghost"
-                className="justify-start text-slate-300 hover:text-white"
-              >
-                Đăng nhập
-              </Button>
-            </nav>
-          </div>
-        )}
       </div>
     </header>
   );
