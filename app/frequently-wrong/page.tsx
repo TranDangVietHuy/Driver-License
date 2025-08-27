@@ -24,6 +24,7 @@ export default function page() {
   const [showAnswers, setShowAnswers] = useState<ShowAnswersType[]>([]);
 
   const [questionStat, setQuestionStat] = useState<QuestionStat[]>([]);
+  const [filteredQuestionStat, setFilteredQuestionStat] = useState<QuestionStat[]>([]);
 
   const fetchQuestions = async () => {
     try {
@@ -81,16 +82,27 @@ export default function page() {
    
   }
 
-  const filterFrequentlyWrongQuestions = async (percentage:number) =>{
+  const filterFrequentlyWrongQuestions = async (percentage: number) => {
     console.log('Question stats before filtering:', questionStat);
-    const filtered = questionStat.filter(q => (q.wrongAttempts + q.correctAttempts) > 0 && (q.wrongAttempts / (q.wrongAttempts + q.correctAttempts)) >= percentage);
+    const filtered = questionStat.filter(q => 
+      (q.wrongAttempts + q.correctAttempts) > 0 && 
+      (q.wrongAttempts / (q.wrongAttempts + q.correctAttempts)) >= percentage
+    );
     console.log('Frequently wrong questions filtered:', filtered);
-    setQuestionStat(filtered);
+    
+    // Store filtered data in separate state instead of overwriting original
+    setFilteredQuestionStat(filtered);
+  }
 
-    const allQuestions = await fetchQuestions();
-    const filteredQuestion = allQuestions.filter((q:any) => filtered.some(fs => fs.id == q.id));
-    setQuestions(filteredQuestion);
-    console.log('Filtered question bank set:', filteredQuestion);
+  const loadFilteredQuestions = async () => {
+    if (filteredQuestionStat.length > 0) {
+      const allQuestions = await fetchQuestions();
+      const filteredQuestions = allQuestions.filter((q: any) => 
+        filteredQuestionStat.some(fs => fs.id == q.id)
+      );
+      setQuestions(filteredQuestions);
+      console.log('Filtered question bank set:', filteredQuestions);
+    }
   }
 
   const getUser = () => {
@@ -103,25 +115,31 @@ export default function page() {
   }
 
 
-  useEffect(()=>{
+  useEffect(() => {
     getUser();
-  },[]);
+  }, []);
 
-  useEffect(()=>{
-    if(history.length >0){
+  useEffect(() => {
+    if (history.length > 0) {
+      console.log('History updated:', history);
       caculateQuestionStat();
     }
-  },[history]);
+  }, [history]);
 
-
-
-  // Separate useEffect to run filtering after questionStat is updated
-  useEffect(()=>{
-    if(questionStat.length > 0){
+  // When questionStat is calculated, filter them
+  useEffect(() => {
+    if (questionStat.length > 0) {
       console.log('Question stats updated:', questionStat);
       filterFrequentlyWrongQuestions(0.5);
     }
-  },[questionStat]);
+  }, [questionStat]);
+
+  // When filtered stats change, load the corresponding questions
+  useEffect(() => {
+    if (filteredQuestionStat.length > 0) {
+      loadFilteredQuestions();
+    }
+  }, [filteredQuestionStat]);
 
 
   const handleChange = (questionId: number, selectedId: string) => {

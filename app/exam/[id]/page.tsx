@@ -102,6 +102,7 @@ const ExamHistoryDetail = () => {
           const detail = getAnswerDetail(q.id);
           const correctId = detail?.correctAnswerId;
           const selectedId = detail?.selectedAnswerId;
+          
 
           return (
             <Card
@@ -120,7 +121,7 @@ const ExamHistoryDetail = () => {
 
               {q.answer.map((a) => {
                 let color = "text-slate-300";
-                if (a.id.toString() === correctId) {
+                if (a.id.toString() === correctId && selectedId) {
                   color = "text-green-500 font-semibold";
                 } else if (a.id.toString() === selectedId) {
                   color = "text-red-500 font-semibold";
