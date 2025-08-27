@@ -7,7 +7,8 @@ import {
   FileText,
 } from "lucide-react";
 import Link from "next/link";
-import { Progress } from "@radix-ui/react-progress";
+// import { Progress } from "@radix-ui/react-progress";
+import * as Progress from "@radix-ui/react-progress";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
@@ -63,17 +64,17 @@ const page = () => {
   // Calculate completion percentage for a category
   const calculateCompletion = (category: string) => {
 
-    const categoryQuestions = questions.filter(q => 
+    const categoryQuestions = questions.filter(q =>
       Array.isArray(q.categories) ? q.categories.includes(category) : q.categories === category
     );
     const totalQuestions = categoryQuestions.length;
 
     if (totalQuestions === 0) return 0;
-    
-    const completedQuestions = progress.filter(p => 
+
+    const completedQuestions = progress.filter(p =>
       p.answered && categoryQuestions.some(q => q.id === p.questionId)
     ).length;
-    
+
     return (completedQuestions * 100 / totalQuestions);
   };
 
@@ -82,7 +83,7 @@ const page = () => {
 
   // Get question count for a category
   const getQuestionCount = (category: string) => {
-    const categoryQuestions = questions.filter(q => 
+    const categoryQuestions = questions.filter(q =>
       Array.isArray(q.categories) ? q.categories.includes(category) : q.categories === category
     );
     return categoryQuestions.length;
@@ -93,21 +94,21 @@ const page = () => {
 
   // Get completed question count for a category
   const getCompletedCount = (category: string) => {
-    const categoryQuestions = questions.filter(q => 
+    const categoryQuestions = questions.filter(q =>
       Array.isArray(q.categories) ? q.categories.includes(category) : q.categories === category
     );
 
-    const completedQuestions = progress.filter(p => 
+    const completedQuestions = progress.filter(p =>
       p.answered && categoryQuestions.some(q => q.id === p.questionId)
     ).length;
-    
+
     return completedQuestions;
   };
 
   useEffect(() => {
     const loadedUser = getUser();
     fetchQuestions();
-    
+
     if (loadedUser && loadedUser.id) {
       fetchProgress(loadedUser.id);
     }
@@ -134,7 +135,7 @@ const page = () => {
     },
     {
       id: 6,
-      title: "Biển báo giao thông", 
+      title: "Biển báo giao thông",
       category: "traffic-sign",
       icon: "🚸",
       estimatedTime: "2 giờ",
@@ -144,7 +145,7 @@ const page = () => {
       id: 2,
       title: "Giải sa hình",
       category: "situation",
-      icon: "🚛", 
+      icon: "🚛",
       estimatedTime: "1.5 giờ",
       href: "/theory/situation",
     },
@@ -155,14 +156,14 @@ const page = () => {
     const questionCount = getQuestionCount(topic.category);
     const completion = calculateCompletion(topic.category);
     const completedCount = getCompletedCount(topic.category);
-    
+
     console.log(`${topic.title} stats:`, {
       category: topic.category,
       questionCount,
       completion,
       completedCount
     });
-    
+
     return {
       ...topic,
       questions: questionCount,
@@ -215,11 +216,18 @@ const page = () => {
                   </div>
 
                   <div className="relative">
-                    <Progress
-                      value={topic.completed}
-                      className="h-3 bg-slate-700 animate-progress-fill"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-20 animate-shimmer"></div>
+                    <Progress.Root
+                      className="relative overflow-hidden bg-slate-700  w-full h-3"
+                      value={topic.completed || 0}
+                      max={100}
+                    >
+                      <Progress.Indicator
+                      
+                        className={`bg-gradient-to-r ${topic.completed < 20? 'from-blue-500 from-[0%] via-purple-500 via-[95%] to-pink-500 to-[100%]' : 'from-blue-500 from-[0%] via-purple-500 via-[80%] to-pink-500 to-[100%]' } w-full h-full transition-transform duration-500 ease-out`}
+                        style={{ transform: `translateX(-${100 - (topic.completed || 0)}%)` }}
+                      />
+                    </Progress.Root>
+
                   </div>
 
                   <div className="flex items-center justify-between pt-2">
@@ -237,7 +245,7 @@ const page = () => {
           </Link>
         ))}
       </div>
-      
+
       {/* Loading state */}
       {questions.length === 0 && (
         <div className="flex justify-center items-center min-h-[200px]">
