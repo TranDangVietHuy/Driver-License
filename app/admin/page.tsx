@@ -14,16 +14,16 @@ import {
   Check,
   X,
   Save,
+  Inbox,
 } from "lucide-react";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
-interface Answer { // Định nghĩa cấu trúc dữ liệu
+interface Answer {
   id: number;
   content: string;
   correct: boolean;
 }
-
 interface Question {
   id: string;
   question: string;
@@ -33,18 +33,39 @@ interface Question {
   img_url: string | null;
 }
 
+// --- Feedback Interfaces ---
+interface Feedback {
+  id: string;
+  userId: string;
+  username: string;
+  subject: string;
+  message: string;
+  questionId: string;
+  type: string;
+  createdAt: string;
+  isRead: boolean;
+  readAt: string | null;
+}
+
 const AdminPage = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [filteredQuestions, setFilteredQuestions] = useState<Question[]>([]);
+  const [feedbacks, setFeedbacks] = useState<Feedback[]>([]);
+  const [activeTab, setActiveTab] = useState<"questions" | "feedback">(
+    "questions"
+  );
+
+  // Filters
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [compulsoryFilter, setCompulsoryFilter] = useState("all");
   const [imageFilter, setImageFilter] = useState("all");
+
+  // Editing questions
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editForm, setEditForm] = useState<Partial<Question>>({});
   const [showAddForm, setShowAddForm] = useState(false);
   const [newQuestion, setNewQuestion] = useState<Partial<Question>>({
-    // Partial - Utility Type giúp tạo ra 1 kiểu dữ liệu mới mà tất cả các thuộc tính của kiểu ban đầu đều trở thành optional
     question: "",
     answer: [
       { id: 1, content: "", correct: false },
@@ -59,21 +80,19 @@ const AdminPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Check quyền Admin
     const user = localStorage.getItem("user");
     if (!user) {
       router.push("/login");
       return;
     }
-
     const userData = JSON.parse(user);
     if (userData.role !== "admin") {
       toast.error("Bạn không có quyền truy cập trang này!");
       router.push("/");
       return;
     }
-
     fetchQuestions();
+    fetchFeedbacks();
   }, []);
 
   useEffect(() => {
@@ -88,6 +107,26 @@ const AdminPage = () => {
     } catch (error) {
       console.error("Lỗi khi tải câu hỏi:", error);
       toast.error("Không thể tải danh sách câu hỏi");
+    }
+  };
+
+  const fetchFeedbacks = async () => {
+    try {
+      const response = await fetch("http://localhost:9999/feedback");
+      const data = await response.json();
+
+      // Tự động xoá feedback đã đọc quá 7 ngày
+      const now = new Date();
+      const validFeedbacks = data.filter((f: Feedback) => {
+        if (f.isRead && f.readAt) {
+          const diff = now.getTime() - new Date(f.readAt).getTime();
+          return diff < 7 * 24 * 60 * 60 * 1000;
+        }
+        return true;
+      });
+      setFeedbacks(validFeedbacks);
+    } catch (error) {
+      console.error("Lỗi khi tải feedback:", error);
     }
   };
 
@@ -193,7 +232,8 @@ const AdminPage = () => {
 
   const handleAddQuestion = async () => {
     // Validation
-    if (!newQuestion.question?.trim()) {  // Optional Chaining Operator
+    if (!newQuestion.question?.trim()) {
+      // Optional Chaining Operator
       // Do newQuestion là 1 state kiểu Partial -> Các properties đều là Optional
       // Typescript có thể coi nó là undefined
       // undefined và null không có method trim() / length()
@@ -319,16 +359,43 @@ const AdminPage = () => {
     setEditForm({ ...editForm, answer: updatedAnswers });
   };
 
+  const markAsRead = async (id: string) => {
+    try {
+      await fetch(`http://localhost:9999/feedback/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          isRead: true,
+          readAt: new Date().toISOString(),
+        }),
+      });
+      fetchFeedbacks();
+    } catch (err) {
+      console.error("Lỗi khi cập nhật feedback:", err);
+    }
+  };
+
+  const deleteFeedback = async (id: string) => {
+    if (!confirm("Xoá feedback này?")) return;
+    try {
+      await fetch(`http://localhost:9999/feedback/${id}`, { method: "DELETE" });
+      toast.success("Đã xoá feedback");
+      fetchFeedbacks();
+    } catch (err) {
+      console.error("Lỗi khi xoá feedback:", err);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 p-6">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
+      {/* Header */}
+      <div className="mx-25">
         <div className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-3xl font-bold text-white mb-2">
               🚗 Drive Master - Admin Panel
             </h1>
-            <p className="text-slate-400">Quản lý câu hỏi thi bằng lái xe</p>
+            <p className="text-slate-400">Quản lý hệ thống</p>
           </div>
           <Button
             onClick={handleLogout}
@@ -340,460 +407,565 @@ const AdminPage = () => {
           </Button>
         </div>
 
-        {/* Filters */}
-        <Card className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 mb-6">
-          <CardHeader>
-            <CardTitle className="text-white flex items-center gap-2">
-              <Filter className="w-5 h-5" />
-              Bộ lọc & Tìm kiếm
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              {/* Search */}
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 w-4 h-4" />
-                <input
-                  type="text"
-                  placeholder="Tìm kiếm câu hỏi..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 bg-slate-800/40 border border-slate-700/50 rounded-md text-white placeholder-slate-400"
-                />
-              </div>
+        {/* Tab Switcher */}
+        <div className="flex gap-2 mb-6">
+          <Button
+            onClick={() => setActiveTab("questions")}
+            className={
+              activeTab === "questions"
+                ? "bg-blue-600 text-white"
+                : "bg-slate-800 text-slate-300"
+            }
+          >
+            Câu hỏi
+          </Button>
+          <Button
+            onClick={() => setActiveTab("feedback")}
+            className={
+              activeTab === "feedback"
+                ? "bg-blue-600 text-white"
+                : "bg-slate-800 text-slate-300"
+            }
+          >
+            <Inbox className="w-4 h-4 mr-2" />
+            Feedback ({feedbacks.filter((f) => !f.isRead).length} mới)
+          </Button>
+        </div>
+      </div>
 
-              {/* Category Filter */}
-              <select
-                value={categoryFilter}
-                onChange={(e) => setCategoryFilter(e.target.value)}
-                className="bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
-              >
-                <option value="all">Tất cả danh mục</option>
-                <option value="law">Luật giao thông</option>
-                <option value="traffic-sign">Biển báo</option>
-                <option value="situation">Tình huống</option>
-              </select>
-
-              {/* Compulsory Filter */}
-              <select
-                value={compulsoryFilter}
-                onChange={(e) => setCompulsoryFilter(e.target.value)}
-                className="bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
-              >
-                <option value="all">Tất cả câu hỏi</option>
-                <option value="true">Câu hỏi liệt</option>
-                <option value="false">Câu hỏi thường</option>
-              </select>
-
-              {/* Image Filter */}
-              <select
-                value={imageFilter}
-                onChange={(e) => setImageFilter(e.target.value)}
-                className="bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
-              >
-                <option value="all">Tất cả</option>
-                <option value="true">Có hình ảnh</option>
-                <option value="false">Không có hình ảnh</option>
-              </select>
-            </div>
-
-            <div className="flex justify-between items-center">
-              <p className="text-slate-400">
-                Hiển thị {filteredQuestions.length} / {questions.length} câu hỏi
-              </p>
-              <Button
-                onClick={() => setShowAddForm(true)}
-                className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white"
-              >
-                <Plus className="w-4 h-4 mr-2" />
-                Thêm câu hỏi
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Add Form Modal */}
-        {showAddForm && (
+      {activeTab === "questions" && (
+        <div className="max-w-7xl mx-auto">
+          {/* Filters */}
           <Card className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 mb-6">
             <CardHeader>
-              <CardTitle className="text-white">Thêm câu hỏi mới</CardTitle>
+              <CardTitle className="text-white flex items-center gap-2">
+                <Filter className="w-5 h-5" />
+                Bộ lọc & Tìm kiếm
+              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              {/* Question */}
-              <div>
-                <label className="block text-slate-300 mb-2">Câu hỏi *</label>
-                <textarea
-                  value={newQuestion.question || ""}
-                  onChange={(e) =>
-                    setNewQuestion({ ...newQuestion, question: e.target.value })
-                  }
-                  className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
-                  rows={3}
-                  placeholder="Nhập nội dung câu hỏi..."
-                />
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                {/* Search */}
+                <div className="relative">
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 w-4 h-4" />
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm câu hỏi..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="w-full pl-10 pr-4 py-2 bg-slate-800/40 border border-slate-700/50 rounded-md text-white placeholder-slate-400"
+                  />
+                </div>
+
+                {/* Category Filter */}
+                <select
+                  value={categoryFilter}
+                  onChange={(e) => setCategoryFilter(e.target.value)}
+                  className="bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                >
+                  <option value="all">Tất cả danh mục</option>
+                  <option value="law">Luật giao thông</option>
+                  <option value="traffic-sign">Biển báo</option>
+                  <option value="situation">Tình huống</option>
+                </select>
+
+                {/* Compulsory Filter */}
+                <select
+                  value={compulsoryFilter}
+                  onChange={(e) => setCompulsoryFilter(e.target.value)}
+                  className="bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                >
+                  <option value="all">Tất cả câu hỏi</option>
+                  <option value="true">Câu hỏi liệt</option>
+                  <option value="false">Câu hỏi thường</option>
+                </select>
+
+                {/* Image Filter */}
+                <select
+                  value={imageFilter}
+                  onChange={(e) => setImageFilter(e.target.value)}
+                  className="bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                >
+                  <option value="all">Tất cả</option>
+                  <option value="true">Có hình ảnh</option>
+                  <option value="false">Không có hình ảnh</option>
+                </select>
               </div>
 
-              {/* Answers */}
-              <div>
-                <label className="block text-slate-300 mb-2">Đáp án *</label>
-                {newQuestion.answer?.map((answer, index) => (
-                  <div key={answer.id} className="flex items-center gap-2 mb-2">
+              <div className="flex justify-between items-center">
+                <p className="text-slate-400">
+                  Hiển thị {filteredQuestions.length} / {questions.length} câu
+                  hỏi
+                </p>
+                <Button
+                  onClick={() => setShowAddForm(true)}
+                  className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white"
+                >
+                  <Plus className="w-4 h-4 mr-2" />
+                  Thêm câu hỏi
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Add Form Modal */}
+          {showAddForm && (
+            <Card className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 mb-6">
+              <CardHeader>
+                <CardTitle className="text-white">Thêm câu hỏi mới</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {/* Question */}
+                <div>
+                  <label className="block text-slate-300 mb-2">Câu hỏi *</label>
+                  <textarea
+                    value={newQuestion.question || ""}
+                    onChange={(e) =>
+                      setNewQuestion({
+                        ...newQuestion,
+                        question: e.target.value,
+                      })
+                    }
+                    className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                    rows={3}
+                    placeholder="Nhập nội dung câu hỏi..."
+                  />
+                </div>
+
+                {/* Answers */}
+                <div>
+                  <label className="block text-slate-300 mb-2">Đáp án *</label>
+                  {newQuestion.answer?.map((answer, index) => (
+                    <div
+                      key={answer.id}
+                      className="flex items-center gap-2 mb-2"
+                    >
+                      <input
+                        type="checkbox"
+                        checked={answer.correct}
+                        onChange={(e) =>
+                          updateNewQuestionAnswer(
+                            index,
+                            "correct",
+                            e.target.checked
+                          )
+                        }
+                        className="w-4 h-4"
+                      />
+                      <input
+                        type="text"
+                        value={answer.content}
+                        onChange={(e) =>
+                          updateNewQuestionAnswer(
+                            index,
+                            "content",
+                            e.target.value
+                          )
+                        }
+                        className="flex-1 bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-1 text-white"
+                        placeholder={`Đáp án ${String.fromCharCode(
+                          65 + index
+                        )}`}
+                      />
+                    </div>
+                  ))}
+                  <p className="text-xs text-slate-400 mt-1">
+                    * Tích chọn vào ô checkbox để đáp án đó là đáp án đúng
+                  </p>
+                </div>
+
+                {/* Settings */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <label className="block text-slate-300 mb-2">
+                      Danh mục *
+                    </label>
+                    <select
+                      value={newQuestion.categories?.[0] || ""}
+                      onChange={(e) =>
+                        setNewQuestion({
+                          ...newQuestion,
+                          categories: e.target.value ? [e.target.value] : [],
+                        })
+                      }
+                      className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                    >
+                      <option value="">Chọn danh mục</option>
+                      <option value="law">Luật giao thông</option>
+                      <option value="traffic-sign">Biển báo</option>
+                      <option value="situation">Tình huống</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-slate-300 mb-2">
+                      URL hình ảnh
+                    </label>
+                    <input
+                      type="text"
+                      value={newQuestion.img_url || ""}
+                      onChange={(e) =>
+                        setNewQuestion({
+                          ...newQuestion,
+                          img_url: e.target.value || null,
+                        })
+                      }
+                      className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                      placeholder="http://..."
+                    />
+                  </div>
+
+                  <div className="flex items-center gap-2 pt-8">
                     <input
                       type="checkbox"
-                      checked={answer.correct}
+                      checked={newQuestion.compulsory || false}
                       onChange={(e) =>
-                        updateNewQuestionAnswer(
-                          index,
-                          "correct",
-                          e.target.checked
-                        )
+                        setNewQuestion({
+                          ...newQuestion,
+                          compulsory: e.target.checked,
+                        })
                       }
                       className="w-4 h-4"
                     />
-                    <input
-                      type="text"
-                      value={answer.content}
-                      onChange={(e) =>
-                        updateNewQuestionAnswer(
-                          index,
-                          "content",
-                          e.target.value
-                        )
-                      }
-                      className="flex-1 bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-1 text-white"
-                      placeholder={`Đáp án ${String.fromCharCode(65 + index)}`}
-                    />
+                    <label className="text-slate-300">Câu hỏi liệt</label>
                   </div>
-                ))}
-                <p className="text-xs text-slate-400 mt-1">
-                  * Tích chọn vào ô checkbox để đáp án đó là đáp án đúng
-                </p>
-              </div>
+                </div>
 
-              {/* Settings */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div>
-                  <label className="block text-slate-300 mb-2">
-                    Danh mục *
-                  </label>
-                  <select
-                    value={newQuestion.categories?.[0] || ""}
-                    onChange={(e) =>
-                      setNewQuestion({
-                        ...newQuestion,
-                        categories: e.target.value ? [e.target.value] : [],
-                      })
-                    }
-                    className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                <div className="flex gap-2">
+                  <Button
+                    onClick={handleAddQuestion}
+                    className="bg-green-600 hover:bg-green-700 text-white"
                   >
-                    <option value="">Chọn danh mục</option>
-                    <option value="law">Luật giao thông</option>
-                    <option value="traffic-sign">Biển báo</option>
-                    <option value="situation">Tình huống</option>
-                  </select>
+                    <Save className="w-4 h-4 mr-2" />
+                    Lưu
+                  </Button>
+                  <Button
+                    onClick={handleCancelAdd}
+                    variant="outline"
+                    className="border-slate-700 text-slate-300 hover:bg-slate-800"
+                  >
+                    <X className="w-4 h-4 mr-2" />
+                    Hủy
+                  </Button>
                 </div>
+              </CardContent>
+            </Card>
+          )}
 
-                <div>
-                  <label className="block text-slate-300 mb-2">
-                    URL hình ảnh
-                  </label>
-                  <input
-                    type="text"
-                    value={newQuestion.img_url || ""}
-                    onChange={(e) =>
-                      setNewQuestion({
-                        ...newQuestion,
-                        img_url: e.target.value || null,
-                      })
-                    }
-                    className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
-                    placeholder="http://..."
-                  />
-                </div>
+          {/* Questions List */}
+          <div className="space-y-4">
+            {filteredQuestions.map((question) => (
+              <Card
+                key={question.id}
+                className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50"
+              >
+                <CardContent className="p-6">
+                  {editingId === question.id ? (
+                    // Edit Form
+                    <div className="space-y-4">
+                      <div>
+                        <label className="block text-slate-300 mb-2">
+                          Câu hỏi
+                        </label>
+                        <textarea
+                          value={editForm.question || ""}
+                          onChange={(e) =>
+                            setEditForm({
+                              ...editForm,
+                              question: e.target.value,
+                            })
+                          }
+                          className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                          rows={3}
+                        />
+                      </div>
 
-                <div className="flex items-center gap-2 pt-8">
-                  <input
-                    type="checkbox"
-                    checked={newQuestion.compulsory || false}
-                    onChange={(e) =>
-                      setNewQuestion({
-                        ...newQuestion,
-                        compulsory: e.target.checked,
-                      })
-                    }
-                    className="w-4 h-4"
-                  />
-                  <label className="text-slate-300">Câu hỏi liệt</label>
-                </div>
-              </div>
+                      <div>
+                        <label className="block text-slate-300 mb-2">
+                          Đáp án
+                        </label>
+                        {editForm.answer?.map((answer, index) => (
+                          <div
+                            key={answer.id}
+                            className="flex items-center gap-2 mb-2"
+                          >
+                            <input
+                              type="checkbox"
+                              checked={answer.correct}
+                              onChange={(e) =>
+                                updateEditFormAnswer(
+                                  index,
+                                  "correct",
+                                  e.target.checked
+                                )
+                              }
+                              className="w-4 h-4"
+                            />
+                            <input
+                              type="text"
+                              value={answer.content}
+                              onChange={(e) =>
+                                updateEditFormAnswer(
+                                  index,
+                                  "content",
+                                  e.target.value
+                                )
+                              }
+                              className="flex-1 bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-1 text-white"
+                            />
+                          </div>
+                        ))}
+                      </div>
 
-              <div className="flex gap-2">
-                <Button
-                  onClick={handleAddQuestion}
-                  className="bg-green-600 hover:bg-green-700 text-white"
-                >
-                  <Save className="w-4 h-4 mr-2" />
-                  Lưu
-                </Button>
-                <Button
-                  onClick={handleCancelAdd}
-                  variant="outline"
-                  className="border-slate-700 text-slate-300 hover:bg-slate-800"
-                >
-                  <X className="w-4 h-4 mr-2" />
-                  Hủy
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        )}
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                          <label className="block text-slate-300 mb-2">
+                            Danh mục
+                          </label>
+                          <select
+                            value={editForm.categories?.[0] || ""}
+                            onChange={(e) =>
+                              setEditForm({
+                                ...editForm,
+                                categories: e.target.value
+                                  ? [e.target.value]
+                                  : [],
+                              })
+                            }
+                            className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                          >
+                            <option value="">Chọn danh mục</option>
+                            <option value="law">Luật giao thông</option>
+                            <option value="traffic-sign">Biển báo</option>
+                            <option value="situation">Tình huống</option>
+                          </select>
+                        </div>
 
-        {/* Questions List */}
-        <div className="space-y-4">
-          {filteredQuestions.map((question) => (
-            <Card
-              key={question.id}
-              className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50"
-            >
-              <CardContent className="p-6">
-                {editingId === question.id ? (
-                  // Edit Form
-                  <div className="space-y-4">
-                    <div>
-                      <label className="block text-slate-300 mb-2">
-                        Câu hỏi
-                      </label>
-                      <textarea
-                        value={editForm.question || ""}
-                        onChange={(e) =>
-                          setEditForm({ ...editForm, question: e.target.value })
-                        }
-                        className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
-                        rows={3}
-                      />
-                    </div>
+                        <div>
+                          <label className="block text-slate-300 mb-2">
+                            URL hình ảnh
+                          </label>
+                          <input
+                            type="text"
+                            value={editForm.img_url || ""}
+                            onChange={(e) =>
+                              setEditForm({
+                                ...editForm,
+                                img_url: e.target.value || null,
+                              })
+                            }
+                            className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
+                          />
+                        </div>
 
-                    <div>
-                      <label className="block text-slate-300 mb-2">
-                        Đáp án
-                      </label>
-                      {editForm.answer?.map((answer, index) => (
-                        <div
-                          key={answer.id}
-                          className="flex items-center gap-2 mb-2"
-                        >
+                        <div className="flex items-center gap-2 pt-8">
                           <input
                             type="checkbox"
-                            checked={answer.correct}
+                            checked={editForm.compulsory || false}
                             onChange={(e) =>
-                              updateEditFormAnswer(
-                                index,
-                                "correct",
-                                e.target.checked
-                              )
+                              setEditForm({
+                                ...editForm,
+                                compulsory: e.target.checked,
+                              })
                             }
                             className="w-4 h-4"
                           />
-                          <input
-                            type="text"
-                            value={answer.content}
-                            onChange={(e) =>
-                              updateEditFormAnswer(
-                                index,
-                                "content",
-                                e.target.value
-                              )
-                            }
-                            className="flex-1 bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-1 text-white"
-                          />
+                          <label className="text-slate-300">Câu hỏi liệt</label>
                         </div>
-                      ))}
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div>
-                        <label className="block text-slate-300 mb-2">
-                          Danh mục
-                        </label>
-                        <select
-                          value={editForm.categories?.[0] || ""}
-                          onChange={(e) =>
-                            setEditForm({
-                              ...editForm,
-                              categories: e.target.value
-                                ? [e.target.value]
-                                : [],
-                            })
-                          }
-                          className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
-                        >
-                          <option value="">Chọn danh mục</option>
-                          <option value="law">Luật giao thông</option>
-                          <option value="traffic-sign">Biển báo</option>
-                          <option value="situation">Tình huống</option>
-                        </select>
                       </div>
 
-                      <div>
-                        <label className="block text-slate-300 mb-2">
-                          URL hình ảnh
-                        </label>
-                        <input
-                          type="text"
-                          value={editForm.img_url || ""}
-                          onChange={(e) =>
-                            setEditForm({
-                              ...editForm,
-                              img_url: e.target.value || null,
-                            })
-                          }
-                          className="w-full bg-slate-800/40 border border-slate-700/50 rounded-md px-3 py-2 text-white"
-                        />
-                      </div>
-
-                      <div className="flex items-center gap-2 pt-8">
-                        <input
-                          type="checkbox"
-                          checked={editForm.compulsory || false}
-                          onChange={(e) =>
-                            setEditForm({
-                              ...editForm,
-                              compulsory: e.target.checked,
-                            })
-                          }
-                          className="w-4 h-4"
-                        />
-                        <label className="text-slate-300">Câu hỏi liệt</label>
-                      </div>
-                    </div>
-
-                    <div className="flex gap-2">
-                      <Button
-                        onClick={handleSaveEdit}
-                        className="bg-green-600 hover:bg-green-700"
-                      >
-                        <Save className="w-4 h-4 mr-1" />
-                        Lưu
-                      </Button>
-                      <Button
-                        onClick={handleCancelEdit}
-                        variant="outline"
-                        className="border-slate-700 text-slate-300"
-                      >
-                        <X className="w-4 h-4 mr-1" />
-                        Hủy
-                      </Button>
-                    </div>
-                  </div>
-                ) : (
-                  // Display Question
-                  <div>
-                    <div className="flex justify-between items-start mb-4">
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className="text-sm bg-blue-600 text-white px-2 py-1 rounded">
-                            ID: {question.id}
-                          </span>
-                          {question.categories.map((cat) => (
-                            <span
-                              key={cat}
-                              className="text-sm bg-purple-600 text-white px-2 py-1 rounded"
-                            >
-                              {cat === "law"
-                                ? "Luật"
-                                : cat === "traffic-sign"
-                                ? "Biển báo"
-                                : "Tình huống"}
-                            </span>
-                          ))}
-                          {question.compulsory && (
-                            <span className="text-sm bg-red-600 text-white px-2 py-1 rounded">
-                              Câu liệt
-                            </span>
-                          )}
-                          {question.img_url && (
-                            <span className="text-sm bg-green-600 text-white px-2 py-1 rounded flex items-center gap-1">
-                              <ImageIcon className="w-3 h-3" />
-                              Có ảnh
-                            </span>
-                          )}
-                        </div>
-                        <h3 className="text-white text-lg font-medium mb-3">
-                          {question.question}
-                        </h3>
-                      </div>
                       <div className="flex gap-2">
                         <Button
-                          onClick={() => handleEdit(question)}
-                          size="sm"
-                          variant="outline"
-                          className="border-slate-700 text-slate-300 hover:bg-slate-800"
+                          onClick={handleSaveEdit}
+                          className="bg-green-600 hover:bg-green-700"
                         >
-                          <Edit className="w-4 h-4" />
+                          <Save className="w-4 h-4 mr-1" />
+                          Lưu
                         </Button>
                         <Button
-                          onClick={() => handleDelete(question.id)}
-                          size="sm"
+                          onClick={handleCancelEdit}
                           variant="outline"
-                          className="border-red-700 text-red-300 hover:bg-red-900/20"
+                          className="border-slate-700 text-slate-300"
                         >
-                          <Trash2 className="w-4 h-4" />
+                          <X className="w-4 h-4 mr-1" />
+                          Hủy
                         </Button>
                       </div>
                     </div>
-
-                    <div className="space-y-2">
-                      {question.answer.map((answer, index) => (
-                        <div
-                          key={answer.id}
-                          className={`p-3 rounded-md flex items-center gap-2 ${
-                            answer.correct
-                              ? "bg-green-900/20 border border-green-700/30"
-                              : "bg-slate-700/20 border border-slate-700/30"
-                          }`}
-                        >
-                          {answer.correct ? (
-                            <Check className="w-4 h-4 text-green-400" />
-                          ) : (
-                            <X className="w-4 h-4 text-slate-400" />
-                          )}
-                          <span className="text-slate-300">
-                            {String.fromCharCode(65 + index)}. {answer.content}
-                          </span>
+                  ) : (
+                    // Display Question
+                    <div>
+                      <div className="flex justify-between items-start mb-4">
+                        <div className="flex-1">
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-sm bg-blue-600 text-white px-2 py-1 rounded">
+                              ID: {question.id}
+                            </span>
+                            {question.categories.map((cat) => (
+                              <span
+                                key={cat}
+                                className="text-sm bg-purple-600 text-white px-2 py-1 rounded"
+                              >
+                                {cat === "law"
+                                  ? "Luật"
+                                  : cat === "traffic-sign"
+                                  ? "Biển báo"
+                                  : "Tình huống"}
+                              </span>
+                            ))}
+                            {question.compulsory && (
+                              <span className="text-sm bg-red-600 text-white px-2 py-1 rounded">
+                                Câu liệt
+                              </span>
+                            )}
+                            {question.img_url && (
+                              <span className="text-sm bg-green-600 text-white px-2 py-1 rounded flex items-center gap-1">
+                                <ImageIcon className="w-3 h-3" />
+                                Có ảnh
+                              </span>
+                            )}
+                          </div>
+                          <h3 className="text-white text-lg font-medium mb-3">
+                            {question.question}
+                          </h3>
                         </div>
-                      ))}
-                    </div>
-
-                    {question.img_url && (
-                      <div className="mt-4">
-                        <img
-                          src={question.img_url}
-                          alt="Question illustration"
-                          className="max-w-md rounded-md border border-slate-700/50"
-                          onError={(e) => {
-                            const target = e.target as HTMLImageElement;
-                            target.style.display = "none";
-                          }}
-                        />
+                        <div className="flex gap-2">
+                          <Button
+                            onClick={() => handleEdit(question)}
+                            size="sm"
+                            variant="outline"
+                            className="border-slate-700 text-slate-300 hover:bg-slate-800"
+                          >
+                            <Edit className="w-4 h-4" />
+                          </Button>
+                          <Button
+                            onClick={() => handleDelete(question.id)}
+                            size="sm"
+                            variant="outline"
+                            className="border-red-700 text-red-300 hover:bg-red-900/20"
+                          >
+                            <Trash2 className="w-4 h-4" />
+                          </Button>
+                        </div>
                       </div>
-                    )}
-                  </div>
-                )}
+
+                      <div className="space-y-2">
+                        {question.answer.map((answer, index) => (
+                          <div
+                            key={answer.id}
+                            className={`p-3 rounded-md flex items-center gap-2 ${
+                              answer.correct
+                                ? "bg-green-900/20 border border-green-700/30"
+                                : "bg-slate-700/20 border border-slate-700/30"
+                            }`}
+                          >
+                            {answer.correct ? (
+                              <Check className="w-4 h-4 text-green-400" />
+                            ) : (
+                              <X className="w-4 h-4 text-slate-400" />
+                            )}
+                            <span className="text-slate-300">
+                              {String.fromCharCode(65 + index)}.{" "}
+                              {answer.content}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+
+                      {question.img_url && (
+                        <div className="mt-4">
+                          <img
+                            src={question.img_url}
+                            alt="Question illustration"
+                            className="max-w-md rounded-md border border-slate-700/50"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = "none";
+                            }}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {filteredQuestions.length === 0 && (
+            <Card className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50">
+              <CardContent className="p-12 text-center">
+                <div className="text-slate-400 text-lg">
+                  Không tìm thấy câu hỏi nào phù hợp với bộ lọc hiện tại.
+                </div>
               </CardContent>
             </Card>
-          ))}
+          )}
         </div>
+      )}
 
-        {filteredQuestions.length === 0 && (
-          <Card className="bg-slate-800/40 backdrop-blur-xl border border-slate-700/50">
-            <CardContent className="p-12 text-center">
-              <div className="text-slate-400 text-lg">
-                Không tìm thấy câu hỏi nào phù hợp với bộ lọc hiện tại.
-              </div>
-            </CardContent>
-          </Card>
-        )}
-      </div>
+      {/* Feedback View */}
+      {activeTab === "feedback" && (
+        <Card className="bg-slate-800/40 border border-slate-700/50">
+          <CardHeader>
+            <CardTitle className="text-white">Danh sách Feedback</CardTitle>
+          </CardHeader>
+          <CardContent>
+            {feedbacks.length === 0 ? (
+              <p className="text-slate-400">Chưa có feedback nào.</p>
+            ) : (
+              <ul className="space-y-4">
+                {feedbacks.map((f) => (
+                  <li
+                    key={f.id}
+                    className={`p-4 rounded border ${
+                      f.isRead
+                        ? "bg-slate-700/30 border-slate-600"
+                        : "bg-blue-900/30 border-blue-600"
+                    }`}
+                  >
+                    <p className="text-white font-semibold">
+                      {f.subject}{" "}
+                      {!f.isRead && (
+                        <span className="ml-2 text-xs bg-red-600 px-2 py-1 rounded">
+                          Mới
+                        </span>
+                      )}
+                    </p>
+                    <p className="text-slate-300">{f.message}</p>
+                    <p className="text-slate-400 text-sm mt-1">
+                      Người gửi: {f.username} |{" "}
+                      {new Date(f.createdAt).toLocaleString()}
+                    </p>
+                    <div className="flex gap-2 mt-2">
+                      {!f.isRead && (
+                        <Button
+                          onClick={() => markAsRead(f.id)}
+                          size="sm"
+                          className="bg-green-600 hover:bg-green-700"
+                        >
+                          Đánh dấu đã đọc
+                        </Button>
+                      )}
+                      {f.isRead && (
+                        <Button
+                          onClick={() => deleteFeedback(f.id)}
+                          size="sm"
+                          variant="outline"
+                          className="border-red-600 text-red-400 hover:bg-red-900/20"
+                        >
+                          <Trash2 className="w-4 h-4" />
+                          Xoá
+                        </Button>
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 };
