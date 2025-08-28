@@ -26,6 +26,10 @@ const titleLogin = [
     name: "Các câu bạn hay sai",
     href: "/frequently-wrong",
   },
+  {
+    name: "Thống kê",
+    href: "/statistic",
+  }
 ];
 
 export function Header({ scrollY, user }: HeaderProps | any,) {
@@ -54,7 +58,17 @@ export function Header({ scrollY, user }: HeaderProps | any,) {
 
           <nav className="hidden md:flex items-center space-x-10 pe-72">
             {titleDefault.map((item) => (
-              <>
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-slate-300 hover:text-white transition-all duration-300 relative group font-medium"
+              >
+                {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+            ))}
+            {user &&
+              titleLogin.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
@@ -63,20 +77,6 @@ export function Header({ scrollY, user }: HeaderProps | any,) {
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
                 </Link>
-              </>
-            ))}
-            {user &&
-              titleLogin.map((item) => (
-                <>
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="text-slate-300 hover:text-white transition-all duration-300 relative group font-medium"
-                  >
-                    {item.name}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
-                  </Link>
-                </>
               ))}
           </nav>
         </div>
