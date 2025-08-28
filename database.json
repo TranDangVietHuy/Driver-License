@@ -7393,169 +7393,8 @@
           "isCorrect": false
         }
       ]
-    },
-    {
-      "id": "ca85",
-      "userId": "2",
-      "examId": 1,
-      "timestamp": "2025-08-28T00:35:20.167Z",
-      "totalQuestions": 25,
-      "correctAnswers": 20,
-      "details": [
-        {
-          "questionId": "2",
-          "selectedAnswerId": "3",
-          "correctAnswerId": "3",
-          "isCorrect": true
-        },
-        {
-          "questionId": "3",
-          "selectedAnswerId": "3",
-          "correctAnswerId": "3",
-          "isCorrect": true
-        },
-        {
-          "questionId": "1",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "142",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "1",
-          "isCorrect": true
-        },
-        {
-          "questionId": "129",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "9",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "1",
-          "isCorrect": false
-        },
-        {
-          "questionId": "141",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "1",
-          "isCorrect": true
-        },
-        {
-          "questionId": "4",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "1",
-          "isCorrect": true
-        },
-        {
-          "questionId": "15",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "130",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "1",
-          "isCorrect": true
-        },
-        {
-          "questionId": "132",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        },
-        {
-          "questionId": "131",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "3",
-          "isCorrect": false
-        },
-        {
-          "questionId": "7",
-          "selectedAnswerId": "3",
-          "correctAnswerId": "3",
-          "isCorrect": true
-        },
-        {
-          "questionId": "138",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "14",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "133",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "136",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "2",
-          "isCorrect": false
-        },
-        {
-          "questionId": "134",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "1",
-          "isCorrect": true
-        },
-        {
-          "questionId": "10",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "135",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "5",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "6",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "8",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "16",
-          "selectedAnswerId": "2",
-          "correctAnswerId": "2",
-          "isCorrect": true
-        },
-        {
-          "questionId": "137",
-          "selectedAnswerId": "1",
-          "correctAnswerId": "1",
-          "isCorrect": true
-        }
-      ]
     }
   ],
-
   "progress": [
     {
       "id": "1a82",
@@ -7611,7 +7450,6 @@
       "userId": "2",
       "questionId": "8",
       "answered": true
-
     }
   ],
   "feedback": [
@@ -7638,7 +7476,18 @@
       "createdAt": "2025-08-27T17:45:39.843Z",
       "isRead": false,
       "readAt": null
-
+    },
+    {
+      "id": "1756345394896",
+      "userId": "2",
+      "username": "Ngoc Mai",
+      "subject": "Câu 1 đề 1 hình ảnh k chính xác",
+      "message": "t thaays con mèo ở đề thi học lái xe",
+      "questionContent": "Sao lại cho con mèo vô đây",
+      "type": "wrong-image",
+      "createdAt": "2025-08-28T01:43:14.896Z",
+      "isRead": false,
+      "readAt": null
     }
   ]
 }
