@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Clock, CornerUpLeft } from "lucide-react";
 import toast from "react-hot-toast";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 const Page = () => {
   const [questions, setQuestions] = useState<any[]>([]);
@@ -15,6 +16,13 @@ const Page = () => {
   const [timeLeft, setTimeLeft] = useState(19 * 60);
   const [examId, setExamId] = useState(0);
 
+  const { id } = useParams();
+  useEffect(() => {
+    if (id) {
+      const idStr = Array.isArray(id) ? id[0] : id;
+      setExamId(parseInt(idStr, 10));
+    }
+  }, [id]);
   const getRandomQuestions = (data: any[], count: number) => {
     const shuffled = [...data].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
